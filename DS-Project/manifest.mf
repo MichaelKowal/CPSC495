@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Premain-Class: unbc.ca.distributed.library.ObjectSizeCalculator
+X-COMMENT: Main-Class will be added automatically by build
+
