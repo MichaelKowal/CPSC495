@@ -8,12 +8,12 @@ package unbc.ca.distributed.algorithms;
 import unbc.ca.distributed.library.Algorithm;
 import unbc.ca.distributed.message.Message;
 import unbc.ca.distributed.message.StringMessage;
-
+import unbc.ca.distributed.simDistributed.Dist_Algorithm;
 /**
  *
  * @author bmann
  */
-public class Route extends Algorithm
+public class Route extends Dist_Algorithm
 {
     boolean receivedTrue = false;
     @Override

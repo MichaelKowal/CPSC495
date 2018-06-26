@@ -14,12 +14,12 @@ import unbc.ca.distributed.library.Fairness;
 import unbc.ca.distributed.message.Message;
 import unbc.ca.distributed.message.RaymondMsg;
 import unbc.ca.distributed.message.StringMessage;
-
+import unbc.ca.distributed.simDistributed.Dist_Algorithm;
 /**
  *
  * @author behnish
  */
-public class RaymondLogicalClocked extends Algorithm {
+public class RaymondLogicalClocked extends Dist_Algorithm {
 
     /* For broadcast Algorithm */
     private boolean sent = false;

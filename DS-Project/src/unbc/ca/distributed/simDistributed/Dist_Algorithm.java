@@ -14,12 +14,13 @@ import unbc.ca.distributed.graph.elements.Edge;
 import unbc.ca.distributed.management.Configuration;
 import unbc.ca.distributed.management.ObjectFactory;
 import unbc.ca.distributed.message.Message;
+import unbc.ca.distributed.library.Algorithm;
 
 /**
  *
  * @author behnish
  */
-public abstract class Dist_Algorithm {
+public abstract class Dist_Algorithm extends Algorithm{
 
     private Dist_Node node = null;
     private int region;

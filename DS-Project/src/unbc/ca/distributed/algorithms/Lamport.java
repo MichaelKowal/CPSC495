@@ -9,8 +9,9 @@ import unbc.ca.distributed.library.Correctness;
 import unbc.ca.distributed.message.TimeLogical;
 import unbc.ca.distributed.message.Message;
 import unbc.ca.distributed.message.Msg;
+import unbc.ca.distributed.simDistributed.Dist_Algorithm;
 
-public class Lamport extends Algorithm {
+public class Lamport extends Dist_Algorithm {
 
     private int I = 0;
     private int R = 1;

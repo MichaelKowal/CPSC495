@@ -17,12 +17,12 @@ import unbc.ca.distributed.library.Correctness;
 import unbc.ca.distributed.message.Message;
 import unbc.ca.distributed.message.Msg;
 import unbc.ca.distributed.message.TimeLogical;
-
+import unbc.ca.distributed.simDistributed.Dist_Algorithm;
 /**
  *
  * @author behnish
  */
-public class Lodha extends Algorithm {
+public class Lodha extends Dist_Algorithm {
 
     private static final int I = 0;
     private static final int R = 1;

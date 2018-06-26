@@ -14,12 +14,12 @@ import unbc.ca.distributed.library.Fairness;
 import unbc.ca.distributed.message.Message;
 import unbc.ca.distributed.message.Msg;
 import unbc.ca.distributed.message.TimeLogical;
-
+import unbc.ca.distributed.simDistributed.Dist_Algorithm;
 /**
  *
  * @author behnish
  */
-public class Carvalho extends Algorithm {
+public class Carvalho extends Dist_Algorithm {
 
     private boolean oneTimeDeal = false;
 

@@ -13,12 +13,12 @@ import unbc.ca.distributed.library.Fairness;
 import unbc.ca.distributed.message.Message;
 import unbc.ca.distributed.message.Msg;
 import unbc.ca.distributed.message.TimeLogical;
-
+import unbc.ca.distributed.simDistributed.Dist_Algorithm;
 /**
  *
  * @author behnish
  */
-public class Ricart extends Algorithm {
+public class Ricart extends Dist_Algorithm {
 
     public static final int I = 0; // idle
     public static final int R = 1; // requesting

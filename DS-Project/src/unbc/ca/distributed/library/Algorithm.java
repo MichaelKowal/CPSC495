@@ -4,6 +4,7 @@
  */
 package unbc.ca.distributed.library;
 
+import java.rmi.RemoteException;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -36,12 +37,13 @@ public abstract class Algorithm {
         this.workLoadObject = workLoadObject;
     }
 
-    protected void startMeUp() {
+    protected void startMeUp() throws RemoteException {
         init();
         checkmessage();
     }
-
-    public synchronized void checkmessage() {
+    
+    
+    public synchronized void checkmessage() throws RemoteException {
         if (checkMessages()) {
             Message messageR = receieve();
             if (messageR != null) {
@@ -58,6 +60,7 @@ public abstract class Algorithm {
         this.lastTryClock = lastTryClock;
     }
 
+    
     private synchronized boolean checkMessages() {
         return node.sim_waiting() > 0;
     }

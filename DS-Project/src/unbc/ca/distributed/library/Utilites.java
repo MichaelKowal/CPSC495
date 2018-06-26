@@ -32,6 +32,7 @@ import unbc.ca.distributed.distributions.Generator;
 import unbc.ca.distributed.distributions.PoissonDistribution;
 import unbc.ca.distributed.distributions.UniformDistribution;
 import unbc.ca.distributed.simDistributed.Dist_Algorithm;
+import unbc.ca.distributed.algorithms.*;
 
 /**
  *
@@ -153,7 +154,7 @@ public class Utilites {
         return null;
     }
 
-    public static Dist_Algorithm returnObject_dist(String name) throws ClassNotFoundException{
+    public static Dist_Algorithm returnObject_dist(String name){
         name = "unbc.ca.distributed.algorithms." + name;
         Dist_Algorithm algorithmObject;
         try {
