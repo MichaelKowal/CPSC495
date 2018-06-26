@@ -153,11 +153,12 @@ public class Utilites {
         return null;
     }
 
-    public static Dist_Algorithm returnObject_dist(String name) {
+    public static Dist_Algorithm returnObject_dist(String name) throws ClassNotFoundException{
         name = "unbc.ca.distributed.algorithms." + name;
         Dist_Algorithm algorithmObject;
         try {
             try {
+                System.out.println(name);
                 algorithmObject = (Dist_Algorithm) Class.forName(name).newInstance();
                 return algorithmObject;
             } catch (InstantiationException | IllegalAccessException ex) {

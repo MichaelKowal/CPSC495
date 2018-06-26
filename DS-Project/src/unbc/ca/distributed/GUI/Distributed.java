@@ -37,7 +37,8 @@ public class Distributed extends javax.swing.JPanel {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents() {
+    private void initComponents()
+    {
 
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -72,8 +73,10 @@ public class Distributed extends javax.swing.JPanel {
         jLabel2.setText("Host Port");
 
         simulate.setText("Start Server");
-        simulate.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        simulate.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 simulateActionPerformed(evt);
             }
         });
@@ -83,8 +86,10 @@ public class Distributed extends javax.swing.JPanel {
         port.setText("2013");
 
         startSimulation.setText("Start Simulation");
-        startSimulation.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        startSimulation.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 startSimulationActionPerformed(evt);
             }
         });
@@ -104,8 +109,10 @@ public class Distributed extends javax.swing.JPanel {
         interDistMean.setText("10");
 
         interDistVariance.setText("5");
-        interDistVariance.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        interDistVariance.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 interDistVarianceActionPerformed(evt);
             }
         });
@@ -124,9 +131,11 @@ public class Distributed extends javax.swing.JPanel {
 
         algorithm.setModel(new javax.swing.DefaultComboBoxModel(Utilites.names()));
 
-        useNode.setText("Use Selectd Node");
-        useNode.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        useNode.setText("Use Selected Node");
+        useNode.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 useNodeActionPerformed(evt);
             }
         });
@@ -140,8 +149,10 @@ public class Distributed extends javax.swing.JPanel {
         distribution2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Random", "Poisson", "Uniform" }));
 
         runAsClient.setText("Run As Client");
-        runAsClient.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        runAsClient.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 runAsClientActionPerformed(evt);
             }
         });
@@ -180,7 +191,7 @@ public class Distributed extends javax.swing.JPanel {
                             .addComponent(jLabel6)
                             .addComponent(jLabel7)
                             .addComponent(jLabel8))
-                        .addContainerGap(94, Short.MAX_VALUE))
+                        .addContainerGap(87, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()

@@ -29,7 +29,7 @@ public class Dist_Simulation extends Thread {
     private Generator delayProcessing;
     private Dist_Sim_systemIF simSystem;
 
-    public Dist_Simulation(String algorithm, Generator csDis, Generator intReqDis, Generator delayProcessing) throws NotBoundException, MalformedURLException, RemoteException {
+    public Dist_Simulation(String algorithm, Generator csDis, Generator intReqDis, Generator delayProcessing) throws NotBoundException, MalformedURLException, RemoteException, ClassNotFoundException {
         super.setName("Simulation Thread");
         this.csRDist = csDis;
         this.interRDist = intReqDis;
@@ -56,7 +56,7 @@ public class Dist_Simulation extends Thread {
 
 
     /* Add object of algorithm here */
-    private void createNetwork() throws RemoteException {
+    private void createNetwork() throws RemoteException, ClassNotFoundException {
 
         for (Map.Entry<Integer, Vertex> entry : ObjectFactory.getNodes().entrySet()) {
             Integer integer = entry.getKey();
