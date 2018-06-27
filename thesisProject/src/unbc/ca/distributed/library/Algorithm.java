@@ -4,6 +4,7 @@
  */
 package unbc.ca.distributed.library;
 
+import java.rmi.RemoteException;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -13,6 +14,7 @@ import unbc.ca.distributed.management.Configuration;
 import unbc.ca.distributed.management.ObjectFactory;
 import unbc.ca.distributed.message.Message;
 import unbc.ca.distributed.message.TimeLogical;
+//import org.github.com.jvec.JVec;
 
 /**
  *
@@ -27,6 +29,7 @@ public abstract class Algorithm {
     private Generator delayProcess;
     private int lastTryClock;
     private Workload workLoadObject;
+    //JVec vcInfo = new JVec("MyProcess", "log");
 
     public Workload getWorkLoadObject() {
         return workLoadObject;
@@ -36,12 +39,12 @@ public abstract class Algorithm {
         this.workLoadObject = workLoadObject;
     }
 
-    protected void startMeUp() {
+    protected void startMeUp() throws RemoteException{
         init();
         checkmessage();
     }
 
-    public synchronized void checkmessage() {
+    public synchronized void checkmessage() throws RemoteException{
         if (checkMessages()) {
             Message messageR = receieve();
             if (messageR != null) {
