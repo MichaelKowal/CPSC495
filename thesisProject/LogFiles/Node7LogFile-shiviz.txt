@@ -1,0 +1,16 @@
+Node 7 {"Node 7":1}
+Initialization Complete
+Node 7 {"Node 7":2}
+7 sending message
+Node 7 {"Node 7":3}
+7 sending message
+Node 7 {"Node 7":4}
+7 sending message
+Node 7 {"Node 7":5}
+7 sending message
+Node 7 {"Node 7":6}
+7 sending message
+Node 7 {"Node 7":7}
+7 sending message
+Node 7 {"Node 7":8}
+7 sending message

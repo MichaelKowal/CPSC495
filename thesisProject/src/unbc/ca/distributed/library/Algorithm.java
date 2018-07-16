@@ -4,6 +4,7 @@
  */
 package unbc.ca.distributed.library;
 
+import java.io.IOException;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -14,19 +15,22 @@ import unbc.ca.distributed.management.ObjectFactory;
 import unbc.ca.distributed.message.Message;
 import unbc.ca.distributed.message.TimeLogical;
 
+import org.github.com.jvec.JVec;
+
 /**
  *
  * @author behnish
  */
 public abstract class Algorithm {
 
-    private Node node = null;
+    public Node node = null;
     private int region;
     private Generator interRDist;
     private Generator csRDist;
     private Generator delayProcess;
     private int lastTryClock;
     private Workload workLoadObject;
+    public JVec vcInfo;
 
     public Workload getWorkLoadObject() {
         return workLoadObject;
@@ -61,7 +65,7 @@ public abstract class Algorithm {
     private synchronized boolean checkMessages() {
         return node.sim_waiting() > 0;
     }
-
+    
     protected abstract void init();
 
     protected abstract void onReceive(Message msg);
@@ -76,6 +80,11 @@ public abstract class Algorithm {
 
     protected void setCsRDist(Generator csRDist) {
         this.csRDist = csRDist;
+    }
+    
+    protected void setVCInfo(JVec vci)
+    {
+        vcInfo = vci;
     }
 
     public double csTimeOutValue() {
@@ -112,7 +121,6 @@ public abstract class Algorithm {
 
     public synchronized void send(int destinationNodeId, Message msg) {
         print("-------------------Node " + getNodeId() + " is sending message to node " + destinationNodeId + "-------------------------Message-->" + msg.getContent());
-
         msg.setFinalReceiver(destinationNodeId);
         msg.setFinalSender(getNodeId());
 
@@ -167,6 +175,11 @@ public abstract class Algorithm {
             addToTraceInternal("S," + getNodeId() + "," + nodeId, message, true, false, false, false, 0);
             message.setReceiver(nodeId);
             node.send(channel, message);
+        }
+        try {
+            node.getVCInfo().prepareSend(getNodeId() + " sending message", message.getContent().getBytes());
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
@@ -251,7 +264,6 @@ public abstract class Algorithm {
 
                 print("####################Node " + getNodeId() + " received message from node " + messageRecieved.getFinalSender()
                         + "###################### and MessageContent->" + messageRecieved.getContent());
-
                 addToTraceInternal("R," + getNodeId() + "," + messageRecieved.getFinalSender(), messageRecieved, false, true, false, false, 0);
                 return messageRecieved;
             } else {
@@ -260,7 +272,7 @@ public abstract class Algorithm {
 
                 print("####################Node " + getNodeId() + " received route message from node " + messageRecieved.getSender() + "," + messageRecieved.getFinalSender() + "," + messageRecieved.getFinalReceiver()
                         + "###################### and MessageContent->" + messageRecieved.getContent());
-
+                
                 double hopDelay = 1;
                 if (Configuration.constantValue != 1) {
                     hopDelay = hopeProcessingDelayValue();

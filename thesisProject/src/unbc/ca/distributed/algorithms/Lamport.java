@@ -1,5 +1,6 @@
 package unbc.ca.distributed.algorithms;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -10,6 +11,8 @@ import unbc.ca.distributed.message.TimeLogical;
 import unbc.ca.distributed.message.Message;
 import unbc.ca.distributed.message.Msg;
 
+import org.github.com.jvec.JVec;
+
 public class Lamport extends Algorithm {
 
     private int I = 0;
@@ -19,7 +22,8 @@ public class Lamport extends Algorithm {
     public ArrayList<TimeLogical> queue = new ArrayList<>();
     public int replyMessages;
     private Assertion safety;
-
+    private int counter = 0;
+    
     public Lamport() {
         setRegion(I);
         safety = new Correctness();
@@ -33,6 +37,7 @@ public class Lamport extends Algorithm {
         } else if (getRegion() == C && !isCSFlag()) {
             freeRessource();
         }
+        
     }
 
     @Override

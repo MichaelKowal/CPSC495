@@ -1,0 +1,14 @@
+Node 4 {"Node 4":1}
+Initialization Complete
+Node 4 {"Node 4":2}
+4 sending message
+Node 4 {"Node 4":3}
+4 sending message
+Node 4 {"Node 4":4}
+4 sending message
+Node 4 {"Node 4":5}
+4 sending message
+Node 4 {"Node 4":6}
+4 sending message
+Node 4 {"Node 4":7}
+4 sending message

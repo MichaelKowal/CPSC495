@@ -9,6 +9,7 @@ import unbc.ca.distributed.graph.elements.Edge;
 import unbc.ca.distributed.graph.elements.Vertex;
 import unbc.ca.distributed.management.Configuration;
 import unbc.ca.distributed.management.ObjectFactory;
+import org.github.com.jvec.JVec;
 
 /**
  * * @author behnish
@@ -25,7 +26,7 @@ public class Simulation extends Thread {
         
         this.network = new Network();
         
-        createNetwork();                
+        createNetwork();
     }   
 
     public Network getNetwork() {
@@ -33,9 +34,9 @@ public class Simulation extends Thread {
     }
 
     public Node node(Algorithm algorithm, String label) {
-        Node nodeObject = new Node(label);        
+        Node nodeObject = new Node(label);       
         nodeObject.saveInNetwork(algorithm, network, label);
-
+        nodeObject.vcInfo = new JVec("Node " + nodeObject.getNodeId(), "LogFiles/Node" + nodeObject.getNodeId() + "LogFile");
         return nodeObject;
     } 
     

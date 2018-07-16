@@ -9,6 +9,7 @@ import java.util.Map;
 import unbc.ca.distributed.management.Configuration;
 import unbc.ca.distributed.management.ObjectFactory;
 
+import org.github.com.jvec.JVec;
 /**
  *
  * @author behnish
@@ -17,6 +18,7 @@ public class Network {
 
     private Map<Integer, Node> nodes = new LinkedHashMap<>();
     private Map<Integer, Algorithm> algorithmCodes = new LinkedHashMap<>();
+    protected Map<Integer, JVec> jVecs = new LinkedHashMap<>();
     private String lastV="";
 
     public String getLastV() {
@@ -42,9 +44,14 @@ public class Network {
     public Map<Integer, Node> getNodes() {
         return nodes;
     }
+    
+    public JVec getJVecAtLocation(int i)
+    {
+        return jVecs.get(i);
+    }
 
     public void addNode(int nodeId, Node node) {
-        nodes.put(nodeId, node);
+        nodes.put(nodeId, node);        
     }
 
     public void startMe()
@@ -52,6 +59,7 @@ public class Network {
         for (Map.Entry<Integer, Node> entry : nodes.entrySet()) {
             Node node = entry.getValue();
             algorithmCodes.put(entry.getKey(), node.getAlgorithmCode());
+            //jVecs.put(node.getNodeId(), new JVec("Node " + node.getNodeId(), "LogFiles/Node" + node.getNodeId() + "LogFile"));
             Core.add(node);
         }
 

@@ -9,6 +9,7 @@ import java.util.Map;
 import unbc.ca.distributed.management.Configuration;
 import unbc.ca.distributed.message.Message;
 
+import org.github.com.jvec.JVec;
 /**
  *
  * @author behnish
@@ -20,6 +21,7 @@ public class Node extends Entity {
     private Algorithm algorithmCode;
     private Network network;
     private int clock = 0;
+    protected JVec vcInfo;
 
     public void adapNodeClock(int c) {
         if (getClock() < c) {
@@ -42,6 +44,11 @@ public class Node extends Entity {
     public Algorithm getAlgorithmCode() {
         return algorithmCode;
     }
+    
+    public JVec getVCInfo()
+    {
+        return vcInfo;
+    }
 
     public Node(String label) {
         super("Node" + label);
@@ -51,9 +58,8 @@ public class Node extends Entity {
         algorithmCode = algorithm;
         network = net;
         nodeObjectId = Integer.parseInt(label);
-
-
         algorithmCode.setNode(this);
+        //vcInfo = network.getJVecAtLocation(getNodeId());
         network.addNode(nodeObjectId, this);
     }
 
