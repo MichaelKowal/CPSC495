@@ -2,6 +2,15 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/Users/michaelkowal/Local%20Documents/Summer%202018/CPSC495/thesisProject/src/unbc/ca/distributed/shiviz/LogMaker.java</file>
+            <file>file:/Users/michaelkowal/Local%20Documents/Summer%202018/CPSC495/thesisProject/src/unbc/ca/distributed/GUI/SimulationReplyLoad.java</file>
+            <file>file:/Users/michaelkowal/Local%20Documents/Summer%202018/CPSC495/thesisProject/src/unbc/ca/distributed/GUI/SingleNetwork.java</file>
+            <file>file:/Users/michaelkowal/Local%20Documents/Summer%202018/CPSC495/thesisProject/src/unbc/ca/distributed/library/Node.java</file>
+            <file>file:/Users/michaelkowal/Local%20Documents/Summer%202018/CPSC495/thesisProject/src/unbc/ca/distributed/library/Network.java</file>
+            <file>file:/Users/michaelkowal/Local%20Documents/Summer%202018/CPSC495/thesisProject/src/unbc/ca/distributed/GUI/SimulationPanel.java</file>
+            <file>file:/Users/michaelkowal/Local%20Documents/Summer%202018/CPSC495/thesisProject/src/unbc/ca/distributed/library/Algorithm.java</file>
+            <file>file:/Users/michaelkowal/Local%20Documents/Summer%202018/CPSC495/thesisProject/src/unbc/ca/distributed/library/Simulation.java</file>
+        </group>
     </open-files>
 </project-private>

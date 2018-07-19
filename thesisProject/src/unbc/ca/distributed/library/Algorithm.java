@@ -31,6 +31,8 @@ public abstract class Algorithm {
     private int lastTryClock;
     private Workload workLoadObject;
     public JVec vcInfo;
+    
+    private static byte[] encodedMsg;
 
     public Workload getWorkLoadObject() {
         return workLoadObject;
@@ -127,6 +129,7 @@ public abstract class Algorithm {
         addToTraceInternal("F," + getNodeId() + "," + destinationNodeId, msg, false, false, false, true, 0);
         try {
             sendMessage(destinationNodeId, msg.clone());
+            
         } catch (CloneNotSupportedException ex) {
             Logger.getLogger(Algorithm.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -177,10 +180,9 @@ public abstract class Algorithm {
             node.send(channel, message);
         }
         try {
-            node.getVCInfo().prepareSend(getNodeId() + " sending message", message.getContent().getBytes());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+            encodedMsg = node.getVCInfo().prepareSend("Node" + getNodeId() + ": Sending Message", 
+                    message.getContent().getBytes());
+        } catch (IOException e) {}
     }
 
     /* 
@@ -265,6 +267,9 @@ public abstract class Algorithm {
                 print("####################Node " + getNodeId() + " received message from node " + messageRecieved.getFinalSender()
                         + "###################### and MessageContent->" + messageRecieved.getContent());
                 addToTraceInternal("R," + getNodeId() + "," + messageRecieved.getFinalSender(), messageRecieved, false, true, false, false, 0);
+                try {
+                    node.getVCInfo().unpackReceive("Receiving Message", encodedMsg);
+                } catch (IOException e) {}
                 return messageRecieved;
             } else {
 

@@ -59,7 +59,6 @@ public class Network {
         for (Map.Entry<Integer, Node> entry : nodes.entrySet()) {
             Node node = entry.getValue();
             algorithmCodes.put(entry.getKey(), node.getAlgorithmCode());
-            //jVecs.put(node.getNodeId(), new JVec("Node " + node.getNodeId(), "LogFiles/Node" + node.getNodeId() + "LogFile"));
             Core.add(node);
         }
 

@@ -45,8 +45,7 @@ public class Node extends Entity {
         return algorithmCode;
     }
     
-    public JVec getVCInfo()
-    {
+    public JVec getVCInfo(){
         return vcInfo;
     }
 
@@ -59,7 +58,6 @@ public class Node extends Entity {
         network = net;
         nodeObjectId = Integer.parseInt(label);
         algorithmCode.setNode(this);
-        //vcInfo = network.getJVecAtLocation(getNodeId());
         network.addNode(nodeObjectId, this);
     }
 

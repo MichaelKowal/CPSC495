@@ -1,16 +1,72 @@
-Node 3 {"Node 3":1}
+Node3 {"Node3":1}
 Initialization Complete
-Node 3 {"Node 3":2}
-3 sending message
-Node 3 {"Node 3":3}
-3 sending message
-Node 3 {"Node 3":4}
-3 sending message
-Node 3 {"Node 3":5}
-3 sending message
-Node 3 {"Node 3":6}
-3 sending message
-Node 3 {"Node 3":7}
-3 sending message
-Node 3 {"Node 3":8}
-3 sending message
+Node3 {"Node3":2}
+Node3: Sending Message
+Node3 {"Node3":3}
+Node3: Sending Message
+Node3 {"Node1":5, "Node2":5, "Node3":4}
+Receiving Message
+Node3 {"Node1":5, "Node2":5, "Node3":5}
+Node3: Sending Message
+Node3 {"Node1":5, "Node2":5, "Node3":6}
+Receiving Message
+Node3 {"Node1":5, "Node2":5, "Node3":7}
+Node3: Sending Message
+Node3 {"Node1":5, "Node2":5, "Node3":8}
+Receiving Message
+Node3 {"Node1":8, "Node2":8, "Node3":9}
+Receiving Message
+Node3 {"Node1":11, "Node2":8, "Node3":10}
+Receiving Message
+Node3 {"Node1":13, "Node2":8, "Node3":11}
+Receiving Message
+Node3 {"Node1":13, "Node2":8, "Node3":12}
+Node3: Sending Message
+Node3 {"Node1":13, "Node2":8, "Node3":13}
+Node3: Sending Message
+Node3 {"Node1":13, "Node2":8, "Node3":14}
+Receiving Message
+Node3 {"Node1":13, "Node2":8, "Node3":15}
+Node3: Sending Message
+Node3 {"Node1":13, "Node2":17, "Node3":16}
+Receiving Message
+Node3 {"Node1":13, "Node2":17, "Node3":17}
+Node3: Sending Message
+Node3 {"Node1":13, "Node2":17, "Node3":18}
+Node3: Sending Message
+Node3 {"Node1":13, "Node2":17, "Node3":19}
+Node3: Sending Message
+Node3 {"Node1":13, "Node2":17, "Node3":20}
+Receiving Message
+Node3 {"Node1":25, "Node2":21, "Node3":21}
+Receiving Message
+Node3 {"Node1":25, "Node2":21, "Node3":22}
+Receiving Message
+Node3 {"Node1":25, "Node2":21, "Node3":23}
+Node3: Sending Message
+Node3 {"Node1":25, "Node2":21, "Node3":24}
+Receiving Message
+Node3 {"Node1":25, "Node2":28, "Node3":25}
+Receiving Message
+Node3 {"Node1":25, "Node2":28, "Node3":26}
+Receiving Message
+Node3 {"Node1":25, "Node2":28, "Node3":27}
+Node3: Sending Message
+Node3 {"Node1":25, "Node2":28, "Node3":28}
+Node3: Sending Message
+Node3 {"Node1":25, "Node2":28, "Node3":29}
+Node3: Sending Message
+Node3 {"Node1":25, "Node2":28, "Node3":30}
+Node3: Sending Message
+Node3 {"Node1":25, "Node2":28, "Node3":31}
+Node3: Sending Message
+Node3 {"Node1":25, "Node2":28, "Node3":32}
+Receiving Message
+Node3 {"Node1":37, "Node2":33, "Node3":33}
+Receiving Message
+Node3 {"Node1":37, "Node2":35, "Node3":34}
+Receiving Message
+Node3 {"Node1":37, "Node2":35, "Node3":35}
+Node3: Sending Message
+Node3 {"Node1":37, "Node2":35, "Node3":36}
+Receiving Message

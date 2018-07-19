@@ -5,7 +5,10 @@
 package unbc.ca.distributed.GUI;
 
 import java.awt.BorderLayout;
+import java.awt.Desktop;
 import java.io.File;
+import java.io.IOException;
+import java.net.URI;
 import java.util.LinkedHashMap;
 import unbc.ca.distributed.database.DatabaseConn;
 import unbc.ca.distributed.distributions.Generator;
@@ -33,7 +36,8 @@ public class SingleNetwork extends javax.swing.JPanel {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents() {
+    private void initComponents()
+    {
 
         jLabel9 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
@@ -46,6 +50,7 @@ public class SingleNetwork extends javax.swing.JPanel {
         jLabel10 = new javax.swing.JLabel();
         simulationRunTime = new javax.swing.JTextField();
         simulate = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         distribution = new javax.swing.JComboBox();
@@ -92,12 +97,23 @@ public class SingleNetwork extends javax.swing.JPanel {
 
         jLabel10.setText("Simulation Run Time");
 
-        simulationRunTime.setText("10000");
+        simulationRunTime.setText("100");
 
         simulate.setText("Simulate");
-        simulate.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        simulate.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 simulateActionPerformed(evt);
+            }
+        });
+
+        jButton1.setText("Open ShiViz");
+        jButton1.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButton1ActionPerformed(evt);
             }
         });
 
@@ -114,17 +130,15 @@ public class SingleNetwork extends javax.swing.JPanel {
                     .addComponent(jLabel10))
                 .addGap(54, 54, 54)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(simulationRunTime, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(constantCheck, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(algorithm, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(database, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(simulate)
-                        .addGap(86, 86, 86))))
+                    .addComponent(database, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(simulationRunTime, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(constantCheck, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(algorithm, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(simulate)
+                    .addComponent(jButton1))
+                .addGap(86, 86, 86))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -142,10 +156,12 @@ public class SingleNetwork extends javax.swing.JPanel {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel16)
                     .addComponent(constantCheck, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addGap(23, 23, 23)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel10)
-                    .addComponent(simulationRunTime, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(simulationRunTime, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton1)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -155,8 +171,10 @@ public class SingleNetwork extends javax.swing.JPanel {
 
         distribution.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Binomial", "Poisson", "Uniform", "Exponential", "Gaussian" }));
         distribution.setSelectedIndex(2);
-        distribution.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        distribution.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 distributionActionPerformed(evt);
             }
         });
@@ -211,8 +229,10 @@ public class SingleNetwork extends javax.swing.JPanel {
 
         distribution1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Binomial", "Poisson", "Uniform", "Exponential", "Gaussian" }));
         distribution1.setSelectedIndex(1);
-        distribution1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        distribution1.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 distribution1ActionPerformed(evt);
             }
         });
@@ -222,8 +242,10 @@ public class SingleNetwork extends javax.swing.JPanel {
         first1.setText("Min");
 
         interDistMean.setText("10");
-        interDistMean.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        interDistMean.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 interDistMeanActionPerformed(evt);
             }
         });
@@ -273,8 +295,10 @@ public class SingleNetwork extends javax.swing.JPanel {
 
         distribution2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Binomial", "Poisson", "Uniform", "Exponential", "Gaussian" }));
         distribution2.setSelectedIndex(1);
-        distribution2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        distribution2.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 distribution2ActionPerformed(evt);
             }
         });
@@ -323,8 +347,10 @@ public class SingleNetwork extends javax.swing.JPanel {
         );
 
         customize.setText("Customize Node Parms");
-        customize.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        customize.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 customizeActionPerformed(evt);
             }
         });
@@ -358,7 +384,7 @@ public class SingleNetwork extends javax.swing.JPanel {
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 57, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
                 .addComponent(customize)
                 .addContainerGap())
         );
@@ -540,6 +566,18 @@ public class SingleNetwork extends javax.swing.JPanel {
         }
     }//GEN-LAST:event_distribution1ActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton1ActionPerformed
+    {//GEN-HEADEREND:event_jButton1ActionPerformed
+        String url = "https://bestchai.bitbucket.io/shiviz/";
+        try { 
+        if (Desktop.isDesktopSupported())
+        Desktop.getDesktop().browse(new URI(url));
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+         
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox algorithm;
     private javax.swing.JComboBox constantCheck;
@@ -557,6 +595,7 @@ public class SingleNetwork extends javax.swing.JPanel {
     private javax.swing.JLabel first2;
     private javax.swing.JTextField interDistMean;
     private javax.swing.JTextField interDistVariance;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel14;
