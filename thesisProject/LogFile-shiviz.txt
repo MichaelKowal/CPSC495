@@ -1,2 +1,0 @@
-Process {"Process":1}
-Initialization Complete
