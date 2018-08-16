@@ -1,3 +1,7 @@
-\contentsline {section}{\numberline {0.1}Notes}{1}
-\contentsline {section}{\numberline {0.2}Introduction}{1}
-\contentsline {subsection}{\numberline {0.2.1}}{1}
+\contentsline {section}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {2}ShiViz}{1}
+\contentsline {section}{\numberline {3}Distributed System\\Virtualization}{1}
+\contentsline {section}{\numberline {4}Benefits of Integration}{1}
+\contentsline {section}{\numberline {5}Changes Made}{1}
+\contentsline {section}{\numberline {6}How to Use the Modified Software}{2}
+\contentsline {section}{\numberline {7}Challenges Faced}{2}
