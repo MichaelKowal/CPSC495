@@ -107,6 +107,7 @@ public class RaymondLogicalClocked extends Algorithm {
                 setRegion(I);
             }
         }
+        currentAlg = this.getClass().getName();
     }
 
     private void sendPrivilege() {

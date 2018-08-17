@@ -1,7 +1,8 @@
 \contentsline {section}{\numberline {1}Introduction}{1}
-\contentsline {section}{\numberline {2}ShiViz}{1}
-\contentsline {section}{\numberline {3}Distributed System\\Virtualization}{1}
-\contentsline {section}{\numberline {4}Benefits of Integration}{1}
-\contentsline {section}{\numberline {5}Changes Made}{1}
-\contentsline {section}{\numberline {6}How to Use the Modified Software}{2}
-\contentsline {section}{\numberline {7}Challenges Faced}{2}
+\contentsline {section}{\numberline {2}Vector Clocks}{1}
+\contentsline {section}{\numberline {3}ShiViz}{1}
+\contentsline {section}{\numberline {4}Distributed System\\Virtualization}{1}
+\contentsline {section}{\numberline {5}Benefits of Integration}{1}
+\contentsline {section}{\numberline {6}Changes Made}{2}
+\contentsline {section}{\numberline {7}How to Use the \\Modified Software}{2}
+\contentsline {section}{\numberline {8}Challenges Faced}{2}

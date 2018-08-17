@@ -51,6 +51,7 @@ public class Kalyani extends Algorithm {
         } else if (getRegion() == C && !isCSFlag()) {
             finishCS();
         }
+        currentAlg = this.getClass().getName();
     }
 
     public void request() {

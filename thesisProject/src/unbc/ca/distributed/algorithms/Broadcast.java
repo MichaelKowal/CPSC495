@@ -23,6 +23,7 @@ public class Broadcast extends
         if (getNodeId() == initiator && !sent) {
             broadcastOut(new StringMessage("wave"));
             sent = true;
+            currentAlg = this.getClass().getName();
         }
     }
 

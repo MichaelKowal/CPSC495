@@ -1,0 +1,112 @@
+(?<host>\S*) (?<clock>{.*})\n(?<event>.*)
+\S {"\S" :1}
+Node1 {"Node1":1}
+Initialization Complete
+Node1 {"Node1":2}
+Node 1: Sending Message: wave
+Node1 {"Node1":3}
+Node 1: Sending Message: wave
+Node1 {"Node1":4}
+Node 1: Sending Message: wave
+Node1 {"Node1":5, "Node2":5, "Node4":8}
+Node 1: Receiving Message: ACK From Node 2
+Node1 {"Node1":6, "Node2":5, "Node3":5, "Node4":8, "Node5":5, "Node7":5}
+Node 1: Receiving Message: ACK From Node 4
+Node1 {"Node1":7, "Node2":5, "Node3":5, "Node4":8, "Node5":5, "Node6":5, "Node7":5}
+Node 1: Receiving Message: wave From Node 3
+Node2 {"Node2":1}
+Initialization Complete
+Node2 {"Node1":4, "Node2":2}
+Node 2: Receiving Message: wave From Node 1
+Node2 {"Node1":4, "Node2":3}
+Node 2: Sending Message: ACK
+Node2 {"Node1":4, "Node2":4}
+Node 2: Sending Message: wave
+Node2 {"Node1":4, "Node2":5}
+Node 2: Sending Message: wave
+Node2 {"Node1":4, "Node2":6, "Node3":5, "Node4":8, "Node5":5, "Node6":5, "Node7":5}
+Node 2: Receiving Message: wave From Node 4
+Node2 {"Node1":4, "Node2":7, "Node3":5, "Node4":8, "Node5":5, "Node6":5, "Node7":5}
+Node 2: Receiving Message: wave From Node 5
+Node3 {"Node3":1}
+Initialization Complete
+Node3 {"Node1":4, "Node2":5, "Node3":2, "Node4":8}
+Node 3: Receiving Message: wave From Node 4
+Node3 {"Node1":4, "Node2":5, "Node3":3, "Node4":8}
+Node 3: Sending Message: ACK
+Node3 {"Node1":4, "Node2":5, "Node3":4, "Node4":8}
+Node 3: Sending Message: wave
+Node3 {"Node1":4, "Node2":5, "Node3":5, "Node4":8}
+Node 3: Sending Message: wave
+Node3 {"Node1":4, "Node2":5, "Node3":6, "Node4":8, "Node5":5, "Node6":5, "Node7":5}
+Node 3: Receiving Message: wave From Node 1
+Node3 {"Node1":4, "Node2":5, "Node3":7, "Node4":8, "Node5":5, "Node6":5, "Node7":5}
+Node 3: Receiving Message: wave From Node 6
+Node4 {"Node4":1}
+Initialization Complete
+Node4 {"Node1":4, "Node2":5, "Node4":2}
+Node 4: Receiving Message: wave From Node 1
+Node4 {"Node1":4, "Node2":5, "Node4":3}
+Node 4: Sending Message: ACK
+Node4 {"Node1":4, "Node2":5, "Node4":4}
+Node 4: Sending Message: wave
+Node4 {"Node1":4, "Node2":5, "Node4":5}
+Node 4: Sending Message: wave
+Node4 {"Node1":4, "Node2":5, "Node4":6}
+Node 4: Sending Message: wave
+Node4 {"Node1":4, "Node2":5, "Node4":7}
+Node 4: Sending Message: wave
+Node4 {"Node1":4, "Node2":5, "Node4":8}
+Node 4: Sending Message: wave
+Node4 {"Node1":4, "Node2":5, "Node3":5, "Node4":9, "Node5":5, "Node7":5}
+Node 4: Receiving Message: ACK From Node 3
+Node4 {"Node1":4, "Node2":5, "Node3":5, "Node4":10, "Node5":5, "Node6":5, "Node7":5}
+Node 4: Receiving Message: ACK From Node 5
+Node4 {"Node1":4, "Node2":5, "Node3":5, "Node4":11, "Node5":5, "Node6":5, "Node7":5}
+Node 4: Receiving Message: ACK From Node 7
+Node4 {"Node1":4, "Node2":5, "Node3":5, "Node4":12, "Node5":5, "Node6":5, "Node7":5}
+Node 4: Receiving Message: wave From Node 2
+Node4 {"Node1":4, "Node2":5, "Node3":5, "Node4":13, "Node5":5, "Node6":5, "Node7":5}
+Node 4: Receiving Message: wave From Node 6
+Node5 {"Node5":1}
+Initialization Complete
+Node5 {"Node1":4, "Node2":5, "Node3":5, "Node4":8, "Node5":2}
+Node 5: Receiving Message: wave From Node 4
+Node5 {"Node1":4, "Node2":5, "Node3":5, "Node4":8, "Node5":3}
+Node 5: Sending Message: ACK
+Node5 {"Node1":4, "Node2":5, "Node3":5, "Node4":8, "Node5":4}
+Node 5: Sending Message: wave
+Node5 {"Node1":4, "Node2":5, "Node3":5, "Node4":8, "Node5":5}
+Node 5: Sending Message: wave
+Node5 {"Node1":4, "Node2":5, "Node3":5, "Node4":8, "Node5":6, "Node6":5, "Node7":5}
+Node 5: Receiving Message: wave From Node 2
+Node5 {"Node1":4, "Node2":5, "Node3":5, "Node4":8, "Node5":7, "Node6":5, "Node7":5}
+Node 5: Receiving Message: wave From Node 7
+Node6 {"Node6":1}
+Initialization Complete
+Node6 {"Node1":4, "Node2":5, "Node3":5, "Node4":8, "Node5":5, "Node6":2, "Node7":5}
+Node 6: Receiving Message: wave From Node 7
+Node6 {"Node1":4, "Node2":5, "Node3":5, "Node4":8, "Node5":5, "Node6":3, "Node7":5}
+Node 6: Sending Message: ACK
+Node6 {"Node1":4, "Node2":5, "Node3":5, "Node4":8, "Node5":5, "Node6":4, "Node7":5}
+Node 6: Sending Message: wave
+Node6 {"Node1":4, "Node2":5, "Node3":5, "Node4":8, "Node5":5, "Node6":5, "Node7":5}
+Node 6: Sending Message: wave
+Node6 {"Node1":4, "Node2":5, "Node3":5, "Node4":8, "Node5":5, "Node6":6, "Node7":5}
+Node 6: Receiving Message: wave From Node 3
+Node6 {"Node1":4, "Node2":5, "Node3":5, "Node4":8, "Node5":5, "Node6":7, "Node7":5}
+Node 6: Receiving Message: wave From Node 4
+Node7 {"Node7":1}
+Initialization Complete
+Node7 {"Node1":4, "Node2":5, "Node3":5, "Node4":8, "Node5":5, "Node7":2}
+Node 7: Receiving Message: wave From Node 4
+Node7 {"Node1":4, "Node2":5, "Node3":5, "Node4":8, "Node5":5, "Node7":3}
+Node 7: Sending Message: ACK
+Node7 {"Node1":4, "Node2":5, "Node3":5, "Node4":8, "Node5":5, "Node7":4}
+Node 7: Sending Message: wave
+Node7 {"Node1":4, "Node2":5, "Node3":5, "Node4":8, "Node5":5, "Node7":5}
+Node 7: Sending Message: wave
+Node7 {"Node1":4, "Node2":5, "Node3":5, "Node4":8, "Node5":5, "Node6":5, "Node7":6}
+Node 7: Receiving Message: ACK From Node 6
+Node7 {"Node1":4, "Node2":5, "Node3":5, "Node4":8, "Node5":5, "Node6":5, "Node7":7}
+Node 7: Receiving Message: wave From Node 5

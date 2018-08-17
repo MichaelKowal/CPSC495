@@ -23,6 +23,7 @@ public class Route extends Algorithm
             send(7, new StringMessage("Me"));
             receivedTrue = true;
         }
+        currentAlg = this.getClass().getName();
     }
 
     @Override

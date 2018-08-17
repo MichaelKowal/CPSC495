@@ -2,67 +2,107 @@
 \usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
 \geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
 \usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
-								% TeX will automatically convert eps --> pdf in pdflatex		
+								% TeX will automatically convert eps --> pdf in pdflatex
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+	
 \usepackage{amssymb}
 \usepackage{lmodern}
 
-\title{Combining ShiViz and Distributed System Virtualization Software}
-\author{Michael Kowal}
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+  }
 
+\title{Combining ShiViz and Simulation Suite for Distributed Algorithms}
+\author{Michael Kowal}
+\date{}
 
 \begin{document}
-\begin{titlepage}
-	\centering
-	\vspace{10cm}
-	{\scshape\huge  Combining ShiViz and Distributed System Virtualization Software\par}
-	\vspace{1.5cm}
-	{\scshape\LARGE CPSC 495 Report\par}
-	\vspace{1.5cm}
-	{\Large\itshape Michael Kowal\par}
-	\vfill
-\end{titlepage}
+\maketitle\ 
+\paragraph{Abstract}
 
-\thispagestyle{empty}
-\tableofcontents
-\newpage
-\clearpage
-\pagenumbering{arabic} 
-\setlength{\columnsep}{1 cm}
-\begin{twocolumn}
-\section{Introduction}
+UBC's ShiViz and UNBC's Simulation Suite for Distributed Algorithms are both powerful tools used to assist with designing and improving distributed systems.  By combing the perks of each of them, users will be able to do more without the need for expensive hardware and software solutions.
 
-The purpose of this project was to combine two distributed systems applications and provide ways for users to easily use the modifications.  All of the modifications are done to UNBC's software, ShiViz was never changed.  The project took approximately one and a half months to complete, excluding the documentation.  
+\paragraph{Introduction}
 
-\section{Vector Clocks}
+The purpose of this project was to combine two distributed systems applications and provide ways for users to easily use the modifications.  All of the modifications are done to UNBC's Simulation Suite for Distributed Algorithms (SSDA), ShiViz was never changed, but libraries provided by the ShiViz team were used.  The project took approximately one and a half months to complete, excluding the documentation.  
 
-The primary relationship between the two programs is their vector clocks.  Both of them track events based on a vector clock that records which node in a collection of nodes is currently preforming an action.  The clock will increment for that node upon completion of that action
+\paragraph{Vector Clocks}
 
-\section{ShiViz}
+The primary relationship between the two programs is their vector clocks.  Both of them track events based on a vector clock that records which node in a collection of nodes is currently preforming an action.  The clock will increment for that node upon completion of that action.  The two programs both do this in a slightly different way, requiring the use of two different clocks when generating a ShiViz log.
+
+\paragraph{ShiViz}
 
 ShiViz is a software for visualizing data flow through distributed systems.  It was created by students at the University of British Columbia.  The tool helps users understand the flow of a concurrent or distributed system by providing users with an interactive graph that displays where data travels and when.  It allows users to see patterns, called "motifs" in the data flow as well as provides many different ways to search and manipulate the graph to see more specific events.  The software requires specially formatted log files that, when input into the site, get interpreted and displayed correctly as an interactive graph.
+\begin{figure}[h!]
+\caption{ShiViz example visualization}
+\includegraphics[scale=0.4]{ShiViz_Example.png} 
+\centering
+\end{figure}
 
-\section{Distributed System\\Virtualization}
 
-The primary software that was used in this project is the distributed system virtualization software created by students at the University of Northern British Columbia.  This software gives users the ability to design a distributed system and test that system without having to pay the huge costs of buying all the necessary hardware.  The tool provides many different pre-made topologies that can be modified by the user as well as the option to draw an entire network from scratch.  The user creates nodes and then assigns connections between those nodes.  It is then possible to adjust the behaviour of each individual node as well as apply different settings to the entire network. ...
+\paragraph{Simulation Suite for Distributed Software}
 
-\section{Benefits of Integration}
+The primary software that was used in this project is the SSDA created by students at the University of Northern British Columbia.  This software gives users the ability to design a distributed system and test that system without having to pay the huge costs of buying all the necessary hardware.  The tool provides many different pre-made topologies that can be modified by the user as well as the option to draw an entire network from scratch.  
+\begin{figure}[h!!]
+\caption{SSDA user interface}
+\includegraphics[scale=0.3]{SSDA_Example.png} 
+\centering
+\end{figure}The user creates nodes and then assigns connections between those nodes.  It is then possible to adjust the behaviour of each individual node as well as apply different settings to the entire network. There are other features of the app as well, like an animation that displays the flow of information from one node to another, as well as ...
 
-By combining these two softwares, users will be able to get even more information on the viability of their distributed system.  ShiViz will be able to visualize exactly what is happening in the virtualized distributed system and users will be able to make improvements if need be.
 
-\section{Changes Made}
+\paragraph{Benefits of Integration}
 
-There were not many adjustments that needed to be made to the distributed system software in order to get it to create a log file that ShiViz would be able to understand.  After importing the .jar file provided by ShiViz, it was only a matter of finding out where to call the log maker.  The ShiViz package provides a proper vector clock of its own so it was able to keep things organized with only a host name and event. ...
+Both of these softwares provide users with tools to visualize different aspects of distributed systems.  These tools, when combined, give users an even wider array of resources with which to learn about distributed systems.  By enabling the use of ShiViz's logs, users are able to see exactly where the flow of information between different nodes is.  It adds a more in depth layer of information that allows the SSDA to have more applications for a wider user base.
 
-\section{How to Use the Modified Software}
+\paragraph{Changes Made}
 
-It is very easy to use the software.  A log is created every time a simulation is run.  In order to see the ShiViz visualization, a user simply has to click the "Open ShiViz" button on the "Simulation" page of the DS software, then select the log they wish to use from the "LogFiles" folder that is found in the same location as the DS software .jar.
+There are no changes made to the ShiViz software and libraries, but there are a number of small changes to the SSDA.  The first additions made were adding the ShiViz vector clock library to the project.  After that the JVec class that was provided by ShiViz was incorporated into the SSDA.  To do that, a JVec object was created for each node and would record every time that a message is sent or received by that node. \begin{lstlisting}
+//sending a message
+encodedMsg = node.getVCInfo().prepareSend("Node " + getNodeId() + ": Sending Message: " + message.getContent(), message.getContent().getBytes());
+//receiving a message
+node.getVCInfo().unpackReceive("Node " + getNodeId() + ": Receiving Message: " + messageRecieved.getContent() + ", from node " + messageRecieved.getFinalSender(), encodedMsg);
+\end{lstlisting}
+Once each node was being tracked by a JVec object, the GUI elements were changed to allow users to create ShiViz logs from within the SSDA.  Finally, a class was added that takes all of the individual nodes' logs and condenses them into one that included the regular expressions needed by the ShiViz software.
 
-\section{Challenges Faced}
+\paragraph{How to Use the Modified Software}
 
-By far the biggest issue with this project was figuring out how to properly format the received message in order to pass it into the log builder.  Significantly more time was spent on that than anything else.  What eventually worked was to take the original sent message, save it, and modify it slightly as the received message once it reached its destination.
+In order for a user to create a ShiViz compatible log from within the SSDA, they simply need to click the box labeled "Generate ShiViz Log" on the Simulation page of the SSDA.  After setting up a simulation, it can be run by pressing the "Simulate" button.  This will create a Log file in the "LogFiles" folder in the same directory as the SSDA.  In order for the user to see ShiViz's visualization of the log file, they must open ShiViz in a browser.  By clicking the "Open ShiViz" button in the simulation screen of the SSDA, ShiViz will open.  Once there, clicking the "Try out ShiViz" button will bring them to a screen that will ask for a file.
+\begin{figure}[h!]
+\caption{SSDA simulation panel}
+\includegraphics[scale=0.3]{SSDA_Sim_Window.png} 
+\centering
+\end{figure}
+The appropriate file can be found in the LogFiles folder where the log was originally created.  The last step is to click "Visualize" and ShiViz will create a visualization of the selected log.
+\begin{figure}[h!]
+\caption{ShiViz file manipulator}
+\includegraphics[scale=0.5]{ShiViz_File.png} 
+\centering
+\end{figure}
 
-\end{twocolumn}
+\paragraph{Challenges Faced}
+
+There were many challenges faced while completing this project.  Much of the time early on was spent learning about the basics of distributed systems and what the two softwares could do.  It took some time to fully understand what was needed.  Once all of the research was complete, the next hurdle was understanding where to properly integrate the ShiViz vector clock library with the UNBC software.  Creating the logs and recording each sent message was relatively straightforward, but properly recording the received messages proved to be quite the task.  This took longer than anything else and required much more research into what exactly was happening in the library.  Eventually, after much time and frustration, the solution was found by using the encoding provided upon message creation and decoding the message at the receiver's end.  With that challenge complete, the remaining polish was not difficult.  Adding UI elements and consolidating all of the individual logs was simple File IO.
+
+\paragraph{Conclusion}
+
+Stuff happened and it was interesting.
+
 \end{document}   
-
-
-

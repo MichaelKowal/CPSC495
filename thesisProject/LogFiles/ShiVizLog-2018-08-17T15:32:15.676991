@@ -1,0 +1,416 @@
+(?<host>\S*) (?<clock>{.*})\n(?<event>.*)
+\S {"\S" :1}
+Node1 {"Node1":1}
+Initialization Complete
+Node1 {"Node1":2}
+Node 1: Sending Message: WAVE
+Node1 {"Node1":3}
+Node 1: Sending Message: WAVE
+Node1 {"Node1":4}
+Node 1: Sending Message: WAVE
+Node1 {"Node1":5, "Node2":4, "Node4":8, "Node5":4, "Node7":4}
+Node 1: Receiving Message: 1 From Node 2
+Node1 {"Node1":6, "Node2":4, "Node4":8, "Node5":4, "Node7":5}
+Node 1: Receiving Message: 1 From Node 4
+Node1 {"Node1":7, "Node2":4, "Node4":8, "Node5":5, "Node6":5, "Node7":5}
+Node 1: Receiving Message: WAVE From Node 3
+Node1 {"Node1":8, "Node2":4, "Node4":8, "Node5":5, "Node6":5, "Node7":5}
+Node 1: Sending Message: 5
+Node1 {"Node1":9, "Node2":4, "Node4":8, "Node5":5, "Node6":5, "Node7":5}
+Node 1: Sending Message: 1
+Node1 {"Node1":10, "Node2":10, "Node4":8, "Node5":5, "Node6":5, "Node7":5}
+Node 1: Receiving Message: 5 From Node 2
+Node1 {"Node1":11, "Node2":10, "Node4":8, "Node5":5, "Node6":5, "Node7":5}
+Node 1: Sending Message: 5
+Node1 {"Node1":12, "Node2":10, "Node4":8, "Node5":5, "Node6":5, "Node7":5}
+Node 1: Sending Message: 1
+Node1 {"Node1":13, "Node2":11, "Node3":10, "Node4":20, "Node5":5, "Node6":5, "Node7":5}
+Node 1: Receiving Message: 1 From Node 2
+Node1 {"Node1":14, "Node2":11, "Node3":10, "Node4":27, "Node5":10, "Node6":10, "Node7":13}
+Node 1: Receiving Message: 5 From Node 4
+Node1 {"Node1":15, "Node2":11, "Node3":10, "Node4":27, "Node5":10, "Node6":10, "Node7":13}
+Node 1: Receiving Message: 1 From Node 4
+Node1 {"Node1":16, "Node2":11, "Node3":10, "Node4":27, "Node5":10, "Node6":10, "Node7":13}
+Node 1: Sending Message: 5
+Node1 {"Node1":17, "Node2":11, "Node3":10, "Node4":27, "Node5":10, "Node6":10, "Node7":13}
+Node 1: Sending Message: 1
+Node1 {"Node1":18, "Node2":11, "Node3":10, "Node4":27, "Node5":10, "Node6":10, "Node7":14}
+Node 1: Receiving Message: 5 From Node 2
+Node1 {"Node1":19, "Node2":11, "Node3":10, "Node4":27, "Node5":10, "Node6":10, "Node7":14}
+Node 1: Sending Message: 5
+Node1 {"Node1":20, "Node2":11, "Node3":10, "Node4":27, "Node5":10, "Node6":10, "Node7":14}
+Node 1: Sending Message: 1
+Node1 {"Node1":21, "Node2":15, "Node3":10, "Node4":27, "Node5":10, "Node6":10, "Node7":14}
+Node 1: Receiving Message: 1 From Node 2
+Node1 {"Node1":22, "Node2":15, "Node3":14, "Node4":44, "Node5":15, "Node6":14, "Node7":21}
+Node 1: Receiving Message: 5 From Node 4
+Node1 {"Node1":23, "Node2":15, "Node3":14, "Node4":44, "Node5":15, "Node6":14, "Node7":21}
+Node 1: Sending Message: 5
+Node1 {"Node1":24, "Node2":15, "Node3":14, "Node4":44, "Node5":15, "Node6":14, "Node7":21}
+Node 1: Receiving Message: 1 From Node 4
+Node1 {"Node1":25, "Node2":15, "Node3":14, "Node4":44, "Node5":15, "Node6":14, "Node7":21}
+Node 1: Sending Message: 1
+Node1 {"Node1":26, "Node2":18, "Node3":14, "Node4":44, "Node5":15, "Node6":14, "Node7":21}
+Node 1: Receiving Message: 5 From Node 2
+Node1 {"Node1":27, "Node2":18, "Node3":14, "Node4":44, "Node5":15, "Node6":14, "Node7":21}
+Node 1: Sending Message: 5
+Node1 {"Node1":28, "Node2":18, "Node3":18, "Node4":48, "Node5":15, "Node6":14, "Node7":22}
+Node 1: Receiving Message: 1 From Node 2
+Node1 {"Node1":29, "Node2":18, "Node3":18, "Node4":48, "Node5":15, "Node6":14, "Node7":22}
+Node 1: Sending Message: 1
+Node1 {"Node1":30, "Node2":18, "Node3":18, "Node4":58, "Node5":18, "Node6":18, "Node7":29}
+Node 1: Receiving Message: 5 From Node 4
+Node1 {"Node1":31, "Node2":18, "Node3":18, "Node4":58, "Node5":18, "Node6":18, "Node7":29}
+Node 1: Sending Message: 5
+Node1 {"Node1":32, "Node2":18, "Node3":18, "Node4":58, "Node5":18, "Node6":18, "Node7":29}
+Node 1: Sending Message: 1
+Node1 {"Node1":33, "Node2":18, "Node3":18, "Node4":58, "Node5":18, "Node6":18, "Node7":29}
+Node 1: Receiving Message: 1 From Node 4
+Node1 {"Node1":34, "Node2":22, "Node3":18, "Node4":58, "Node5":18, "Node6":18, "Node7":29}
+Node 1: Receiving Message: 5 From Node 2
+Node1 {"Node1":35, "Node2":22, "Node3":18, "Node4":58, "Node5":18, "Node6":18, "Node7":29}
+Node 1: Sending Message: 5
+Node2 {"Node2":1}
+Initialization Complete
+Node2 {"Node1":4, "Node2":2}
+Node 2: Receiving Message: WAVE From Node 1
+Node2 {"Node1":4, "Node2":3}
+Node 2: Sending Message: WAVE
+Node2 {"Node1":4, "Node2":4}
+Node 2: Sending Message: WAVE
+Node2 {"Node1":4, "Node2":5}
+Node 2: Sending Message: 1
+Node2 {"Node1":4, "Node2":6, "Node4":8, "Node5":5, "Node6":5}
+Node 2: Receiving Message: WAVE From Node 4
+Node2 {"Node1":4, "Node2":7, "Node4":8, "Node5":5, "Node6":5}
+Node 2: Receiving Message: WAVE From Node 5
+Node2 {"Node1":9, "Node2":8, "Node4":8, "Node5":5, "Node6":5, "Node7":5}
+Node 2: Receiving Message: 5 From Node 1
+Node2 {"Node1":9, "Node2":9, "Node4":8, "Node5":5, "Node6":5, "Node7":5}
+Node 2: Receiving Message: 1 From Node 1
+Node2 {"Node1":9, "Node2":10, "Node4":8, "Node5":5, "Node6":5, "Node7":5}
+Node 2: Sending Message: 5
+Node2 {"Node1":9, "Node2":11, "Node4":8, "Node5":5, "Node6":5, "Node7":5}
+Node 2: Sending Message: 1
+Node2 {"Node1":17, "Node2":12, "Node3":10, "Node4":27, "Node5":10, "Node6":10, "Node7":13}
+Node 2: Receiving Message: 5 From Node 1
+Node2 {"Node1":17, "Node2":13, "Node3":10, "Node4":27, "Node5":10, "Node6":10, "Node7":13}
+Node 2: Receiving Message: 1 From Node 1
+Node2 {"Node1":17, "Node2":14, "Node3":10, "Node4":27, "Node5":10, "Node6":10, "Node7":13}
+Node 2: Sending Message: 5
+Node2 {"Node1":17, "Node2":15, "Node3":10, "Node4":27, "Node5":10, "Node6":10, "Node7":13}
+Node 2: Sending Message: 1
+Node2 {"Node1":25, "Node2":16, "Node3":14, "Node4":44, "Node5":15, "Node6":14, "Node7":21}
+Node 2: Receiving Message: 5 From Node 1
+Node2 {"Node1":25, "Node2":17, "Node3":14, "Node4":44, "Node5":15, "Node6":14, "Node7":21}
+Node 2: Receiving Message: 1 From Node 1
+Node2 {"Node1":25, "Node2":18, "Node3":14, "Node4":44, "Node5":15, "Node6":14, "Node7":21}
+Node 2: Sending Message: 5
+Node2 {"Node1":25, "Node2":19, "Node3":14, "Node4":44, "Node5":15, "Node6":14, "Node7":21}
+Node 2: Sending Message: 1
+Node2 {"Node1":32, "Node2":20, "Node3":18, "Node4":58, "Node5":18, "Node6":18, "Node7":29}
+Node 2: Receiving Message: 5 From Node 1
+Node2 {"Node1":32, "Node2":21, "Node3":18, "Node4":58, "Node5":18, "Node6":18, "Node7":29}
+Node 2: Receiving Message: 1 From Node 1
+Node2 {"Node1":32, "Node2":22, "Node3":18, "Node4":58, "Node5":18, "Node6":18, "Node7":29}
+Node 2: Sending Message: 5
+Node3 {"Node3":1}
+Initialization Complete
+Node3 {"Node1":4, "Node2":5, "Node3":2}
+Node 3: Receiving Message: WAVE From Node 4
+Node3 {"Node1":4, "Node2":5, "Node3":3}
+Node 3: Sending Message: WAVE
+Node3 {"Node1":4, "Node2":5, "Node3":4}
+Node 3: Sending Message: WAVE
+Node3 {"Node1":4, "Node2":5, "Node3":5}
+Node 3: Sending Message: 1
+Node3 {"Node1":4, "Node2":5, "Node3":6, "Node4":8, "Node5":5, "Node6":5}
+Node 3: Receiving Message: WAVE From Node 1
+Node3 {"Node1":4, "Node2":5, "Node3":7, "Node4":8, "Node5":5, "Node6":5}
+Node 3: Receiving Message: WAVE From Node 6
+Node3 {"Node1":11, "Node2":10, "Node3":8, "Node4":16, "Node5":5, "Node6":5, "Node7":5}
+Node 3: Receiving Message: 5 From Node 4
+Node3 {"Node1":12, "Node2":10, "Node3":9, "Node4":16, "Node5":5, "Node6":5, "Node7":5}
+Node 3: Receiving Message: 1 From Node 4
+Node3 {"Node1":12, "Node2":10, "Node3":10, "Node4":16, "Node5":5, "Node6":5, "Node7":5}
+Node 3: Sending Message: 5
+Node3 {"Node1":12, "Node2":10, "Node3":11, "Node4":16, "Node5":5, "Node6":5, "Node7":5}
+Node 3: Sending Message: 1
+Node3 {"Node1":19, "Node2":11, "Node3":12, "Node4":32, "Node5":11, "Node6":10, "Node7":14}
+Node 3: Receiving Message: 5 From Node 4
+Node3 {"Node1":19, "Node2":11, "Node3":13, "Node4":32, "Node5":11, "Node6":10, "Node7":14}
+Node 3: Receiving Message: 1 From Node 4
+Node3 {"Node1":19, "Node2":11, "Node3":14, "Node4":32, "Node5":11, "Node6":10, "Node7":14}
+Node 3: Sending Message: 5
+Node3 {"Node1":19, "Node2":11, "Node3":15, "Node4":32, "Node5":11, "Node6":10, "Node7":14}
+Node 3: Sending Message: 1
+Node3 {"Node1":27, "Node2":18, "Node3":16, "Node4":48, "Node5":15, "Node6":14, "Node7":22}
+Node 3: Receiving Message: 5 From Node 4
+Node3 {"Node1":27, "Node2":18, "Node3":17, "Node4":48, "Node5":15, "Node6":14, "Node7":22}
+Node 3: Receiving Message: 1 From Node 4
+Node3 {"Node1":27, "Node2":18, "Node3":18, "Node4":48, "Node5":15, "Node6":14, "Node7":22}
+Node 3: Sending Message: 5
+Node3 {"Node1":27, "Node2":18, "Node3":19, "Node4":48, "Node5":15, "Node6":14, "Node7":22}
+Node 3: Sending Message: 1
+Node3 {"Node1":35, "Node2":22, "Node3":20, "Node4":63, "Node5":19, "Node6":18, "Node7":29}
+Node 3: Receiving Message: 5 From Node 4
+Node4 {"Node4":1}
+Initialization Complete
+Node4 {"Node1":4, "Node2":4, "Node4":2}
+Node 4: Receiving Message: WAVE From Node 1
+Node4 {"Node1":4, "Node2":4, "Node4":3}
+Node 4: Sending Message: WAVE
+Node4 {"Node1":4, "Node2":4, "Node4":4}
+Node 4: Sending Message: WAVE
+Node4 {"Node1":4, "Node2":4, "Node4":5}
+Node 4: Sending Message: WAVE
+Node4 {"Node1":4, "Node2":4, "Node4":6}
+Node 4: Sending Message: WAVE
+Node4 {"Node1":4, "Node2":4, "Node4":7}
+Node 4: Sending Message: WAVE
+Node4 {"Node1":4, "Node2":4, "Node4":8}
+Node 4: Sending Message: 1
+Node4 {"Node1":4, "Node2":4, "Node4":9, "Node5":4, "Node7":5}
+Node 4: Receiving Message: 1 From Node 3
+Node4 {"Node1":4, "Node2":4, "Node4":10, "Node5":5, "Node6":5, "Node7":5}
+Node 4: Receiving Message: 1 From Node 5
+Node4 {"Node1":4, "Node2":4, "Node4":11, "Node5":5, "Node6":5, "Node7":5}
+Node 4: Receiving Message: 1 From Node 7
+Node4 {"Node1":4, "Node2":4, "Node4":12, "Node5":5, "Node6":5, "Node7":5}
+Node 4: Receiving Message: WAVE From Node 2
+Node4 {"Node1":9, "Node2":4, "Node4":13, "Node5":5, "Node6":5, "Node7":5}
+Node 4: Receiving Message: WAVE From Node 6
+Node4 {"Node1":11, "Node2":10, "Node4":14, "Node5":5, "Node6":5, "Node7":5}
+Node 4: Receiving Message: 5 From Node 1
+Node4 {"Node1":11, "Node2":10, "Node4":15, "Node5":5, "Node6":5, "Node7":5}
+Node 4: Sending Message: 5
+Node4 {"Node1":11, "Node2":10, "Node4":16, "Node5":5, "Node6":5, "Node7":5}
+Node 4: Sending Message: 1
+Node4 {"Node1":12, "Node2":10, "Node3":10, "Node4":17, "Node5":5, "Node6":5, "Node7":5}
+Node 4: Receiving Message: 1 From Node 1
+Node4 {"Node1":12, "Node2":11, "Node3":10, "Node4":18, "Node5":5, "Node6":5, "Node7":5}
+Node 4: Receiving Message: 5 From Node 3
+Node4 {"Node1":12, "Node2":11, "Node3":10, "Node4":19, "Node5":5, "Node6":5, "Node7":5}
+Node 4: Sending Message: 5
+Node4 {"Node1":12, "Node2":11, "Node3":10, "Node4":20, "Node5":5, "Node6":5, "Node7":5}
+Node 4: Sending Message: 1
+Node4 {"Node1":12, "Node2":11, "Node3":10, "Node4":21, "Node5":10, "Node6":5, "Node7":5}
+Node 4: Receiving Message: 5 From Node 5
+Node4 {"Node1":12, "Node2":11, "Node3":10, "Node4":22, "Node5":10, "Node6":5, "Node7":5}
+Node 4: Sending Message: 5
+Node4 {"Node1":12, "Node2":11, "Node3":10, "Node4":23, "Node5":10, "Node6":5, "Node7":5}
+Node 4: Sending Message: 1
+Node4 {"Node1":12, "Node2":11, "Node3":10, "Node4":24, "Node5":10, "Node6":5, "Node7":11}
+Node 4: Receiving Message: 1 From Node 3
+Node4 {"Node1":12, "Node2":11, "Node3":10, "Node4":25, "Node5":10, "Node6":10, "Node7":13}
+Node 4: Receiving Message: 5 From Node 7
+Node4 {"Node1":12, "Node2":11, "Node3":10, "Node4":26, "Node5":10, "Node6":10, "Node7":13}
+Node 4: Sending Message: 5
+Node4 {"Node1":12, "Node2":11, "Node3":10, "Node4":27, "Node5":10, "Node6":10, "Node7":13}
+Node 4: Sending Message: 1
+Node4 {"Node1":12, "Node2":11, "Node3":10, "Node4":28, "Node5":11, "Node6":10, "Node7":13}
+Node 4: Receiving Message: 1 From Node 5
+Node4 {"Node1":19, "Node2":11, "Node3":10, "Node4":29, "Node5":11, "Node6":10, "Node7":14}
+Node 4: Receiving Message: 1 From Node 7
+Node4 {"Node1":19, "Node2":11, "Node3":10, "Node4":30, "Node5":11, "Node6":10, "Node7":14}
+Node 4: Receiving Message: 5 From Node 1
+Node4 {"Node1":19, "Node2":11, "Node3":10, "Node4":31, "Node5":11, "Node6":10, "Node7":14}
+Node 4: Sending Message: 5
+Node4 {"Node1":19, "Node2":11, "Node3":10, "Node4":32, "Node5":11, "Node6":10, "Node7":14}
+Node 4: Sending Message: 1
+Node4 {"Node1":19, "Node2":11, "Node3":10, "Node4":33, "Node5":11, "Node6":10, "Node7":14}
+Node 4: Receiving Message: 1 From Node 1
+Node4 {"Node1":19, "Node2":11, "Node3":14, "Node4":34, "Node5":11, "Node6":10, "Node7":14}
+Node 4: Receiving Message: 5 From Node 3
+Node4 {"Node1":19, "Node2":11, "Node3":14, "Node4":35, "Node5":11, "Node6":10, "Node7":14}
+Node 4: Sending Message: 5
+Node4 {"Node1":19, "Node2":11, "Node3":14, "Node4":36, "Node5":11, "Node6":10, "Node7":14}
+Node 4: Sending Message: 1
+Node4 {"Node1":19, "Node2":15, "Node3":14, "Node4":37, "Node5":14, "Node6":10, "Node7":14}
+Node 4: Receiving Message: 1 From Node 3
+Node4 {"Node1":19, "Node2":15, "Node3":14, "Node4":38, "Node5":14, "Node6":10, "Node7":14}
+Node 4: Receiving Message: 5 From Node 5
+Node4 {"Node1":19, "Node2":15, "Node3":14, "Node4":39, "Node5":14, "Node6":10, "Node7":14}
+Node 4: Sending Message: 5
+Node4 {"Node1":19, "Node2":15, "Node3":14, "Node4":40, "Node5":14, "Node6":10, "Node7":14}
+Node 4: Sending Message: 1
+Node4 {"Node1":19, "Node2":15, "Node3":14, "Node4":41, "Node5":15, "Node6":10, "Node7":14}
+Node 4: Receiving Message: 1 From Node 5
+Node4 {"Node1":19, "Node2":15, "Node3":14, "Node4":42, "Node5":15, "Node6":14, "Node7":21}
+Node 4: Receiving Message: 5 From Node 7
+Node4 {"Node1":19, "Node2":15, "Node3":14, "Node4":43, "Node5":15, "Node6":14, "Node7":21}
+Node 4: Sending Message: 5
+Node4 {"Node1":19, "Node2":15, "Node3":14, "Node4":44, "Node5":15, "Node6":14, "Node7":21}
+Node 4: Sending Message: 1
+Node4 {"Node1":27, "Node2":18, "Node3":14, "Node4":45, "Node5":15, "Node6":14, "Node7":21}
+Node 4: Receiving Message: 5 From Node 1
+Node4 {"Node1":27, "Node2":18, "Node3":14, "Node4":46, "Node5":15, "Node6":14, "Node7":22}
+Node 4: Receiving Message: 1 From Node 7
+Node4 {"Node1":27, "Node2":18, "Node3":14, "Node4":47, "Node5":15, "Node6":14, "Node7":22}
+Node 4: Sending Message: 5
+Node4 {"Node1":27, "Node2":18, "Node3":14, "Node4":48, "Node5":15, "Node6":14, "Node7":22}
+Node 4: Sending Message: 1
+Node4 {"Node1":29, "Node2":18, "Node3":18, "Node4":49, "Node5":15, "Node6":14, "Node7":22}
+Node 4: Receiving Message: 5 From Node 3
+Node4 {"Node1":29, "Node2":18, "Node3":18, "Node4":50, "Node5":15, "Node6":14, "Node7":22}
+Node 4: Sending Message: 5
+Node4 {"Node1":29, "Node2":18, "Node3":18, "Node4":51, "Node5":15, "Node6":14, "Node7":22}
+Node 4: Sending Message: 1
+Node4 {"Node1":29, "Node2":18, "Node3":18, "Node4":52, "Node5":15, "Node6":14, "Node7":22}
+Node 4: Receiving Message: 1 From Node 1
+Node4 {"Node1":29, "Node2":18, "Node3":18, "Node4":53, "Node5":18, "Node6":14, "Node7":22}
+Node 4: Receiving Message: 5 From Node 5
+Node4 {"Node1":29, "Node2":18, "Node3":18, "Node4":54, "Node5":18, "Node6":14, "Node7":22}
+Node 4: Sending Message: 5
+Node4 {"Node1":29, "Node2":18, "Node3":18, "Node4":55, "Node5":18, "Node6":14, "Node7":22}
+Node 4: Sending Message: 1
+Node4 {"Node1":29, "Node2":18, "Node3":18, "Node4":56, "Node5":18, "Node6":18, "Node7":29}
+Node 4: Receiving Message: 5 From Node 7
+Node4 {"Node1":29, "Node2":18, "Node3":18, "Node4":57, "Node5":18, "Node6":18, "Node7":29}
+Node 4: Sending Message: 5
+Node4 {"Node1":29, "Node2":18, "Node3":18, "Node4":58, "Node5":18, "Node6":18, "Node7":29}
+Node 4: Sending Message: 1
+Node4 {"Node1":35, "Node2":22, "Node3":18, "Node4":59, "Node5":18, "Node6":18, "Node7":29}
+Node 4: Receiving Message: 5 From Node 1
+Node4 {"Node1":35, "Node2":22, "Node3":18, "Node4":60, "Node5":19, "Node6":18, "Node7":29}
+Node 4: Receiving Message: 1 From Node 3
+Node4 {"Node1":35, "Node2":22, "Node3":18, "Node4":61, "Node5":19, "Node6":18, "Node7":29}
+Node 4: Sending Message: 5
+Node4 {"Node1":35, "Node2":22, "Node3":18, "Node4":62, "Node5":19, "Node6":18, "Node7":29}
+Node 4: Receiving Message: 1 From Node 5
+Node4 {"Node1":35, "Node2":22, "Node3":18, "Node4":63, "Node5":19, "Node6":18, "Node7":29}
+Node 4: Sending Message: 1
+Node5 {"Node5":1}
+Initialization Complete
+Node5 {"Node1":4, "Node2":4, "Node4":8, "Node5":2}
+Node 5: Receiving Message: WAVE From Node 4
+Node5 {"Node1":4, "Node2":4, "Node4":8, "Node5":3}
+Node 5: Sending Message: WAVE
+Node5 {"Node1":4, "Node2":4, "Node4":8, "Node5":4}
+Node 5: Sending Message: WAVE
+Node5 {"Node1":4, "Node2":4, "Node4":8, "Node5":5}
+Node 5: Sending Message: 1
+Node5 {"Node1":4, "Node2":4, "Node4":8, "Node5":6, "Node6":5}
+Node 5: Receiving Message: WAVE From Node 2
+Node5 {"Node1":4, "Node2":4, "Node4":8, "Node5":7, "Node6":5}
+Node 5: Receiving Message: WAVE From Node 7
+Node5 {"Node1":12, "Node2":11, "Node3":10, "Node4":20, "Node5":8, "Node6":5, "Node7":5}
+Node 5: Receiving Message: 5 From Node 4
+Node5 {"Node1":12, "Node2":11, "Node3":10, "Node4":20, "Node5":9, "Node6":5, "Node7":5}
+Node 5: Receiving Message: 1 From Node 4
+Node5 {"Node1":12, "Node2":11, "Node3":10, "Node4":20, "Node5":10, "Node6":5, "Node7":5}
+Node 5: Sending Message: 5
+Node5 {"Node1":12, "Node2":11, "Node3":10, "Node4":20, "Node5":11, "Node6":5, "Node7":5}
+Node 5: Sending Message: 1
+Node5 {"Node1":19, "Node2":11, "Node3":14, "Node4":36, "Node5":12, "Node6":10, "Node7":14}
+Node 5: Receiving Message: 5 From Node 4
+Node5 {"Node1":19, "Node2":15, "Node3":14, "Node4":36, "Node5":13, "Node6":10, "Node7":14}
+Node 5: Receiving Message: 1 From Node 4
+Node5 {"Node1":19, "Node2":15, "Node3":14, "Node4":36, "Node5":14, "Node6":10, "Node7":14}
+Node 5: Sending Message: 5
+Node5 {"Node1":19, "Node2":15, "Node3":14, "Node4":36, "Node5":15, "Node6":10, "Node7":14}
+Node 5: Sending Message: 1
+Node5 {"Node1":29, "Node2":18, "Node3":18, "Node4":51, "Node5":16, "Node6":14, "Node7":22}
+Node 5: Receiving Message: 5 From Node 4
+Node5 {"Node1":29, "Node2":18, "Node3":18, "Node4":51, "Node5":17, "Node6":14, "Node7":22}
+Node 5: Receiving Message: 1 From Node 4
+Node5 {"Node1":29, "Node2":18, "Node3":18, "Node4":51, "Node5":18, "Node6":14, "Node7":22}
+Node 5: Sending Message: 5
+Node5 {"Node1":29, "Node2":18, "Node3":18, "Node4":51, "Node5":19, "Node6":14, "Node7":22}
+Node 5: Sending Message: 1
+Node6 {"Node6":1}
+Initialization Complete
+Node6 {"Node1":4, "Node2":4, "Node4":8, "Node5":5, "Node6":2}
+Node 6: Receiving Message: WAVE From Node 7
+Node6 {"Node1":4, "Node2":4, "Node4":8, "Node5":5, "Node6":3}
+Node 6: Sending Message: WAVE
+Node6 {"Node1":4, "Node2":4, "Node4":8, "Node5":5, "Node6":4}
+Node 6: Sending Message: WAVE
+Node6 {"Node1":4, "Node2":4, "Node4":8, "Node5":5, "Node6":5}
+Node 6: Sending Message: 1
+Node6 {"Node1":4, "Node2":4, "Node4":8, "Node5":5, "Node6":6}
+Node 6: Receiving Message: WAVE From Node 3
+Node6 {"Node1":4, "Node2":4, "Node4":8, "Node5":5, "Node6":7}
+Node 6: Receiving Message: WAVE From Node 4
+Node6 {"Node1":12, "Node2":11, "Node3":10, "Node4":23, "Node5":10, "Node6":8, "Node7":11}
+Node 6: Receiving Message: 5 From Node 7
+Node6 {"Node1":12, "Node2":11, "Node3":10, "Node4":23, "Node5":10, "Node6":9, "Node7":11}
+Node 6: Receiving Message: 1 From Node 7
+Node6 {"Node1":12, "Node2":11, "Node3":10, "Node4":23, "Node5":10, "Node6":10, "Node7":11}
+Node 6: Sending Message: 5
+Node6 {"Node1":12, "Node2":11, "Node3":10, "Node4":23, "Node5":10, "Node6":11, "Node7":11}
+Node 6: Sending Message: 1
+Node6 {"Node1":19, "Node2":15, "Node3":14, "Node4":36, "Node5":15, "Node6":12, "Node7":19}
+Node 6: Receiving Message: 5 From Node 7
+Node6 {"Node1":19, "Node2":15, "Node3":14, "Node4":36, "Node5":15, "Node6":13, "Node7":19}
+Node 6: Receiving Message: 1 From Node 7
+Node6 {"Node1":19, "Node2":15, "Node3":14, "Node4":36, "Node5":15, "Node6":14, "Node7":19}
+Node 6: Sending Message: 5
+Node6 {"Node1":19, "Node2":15, "Node3":14, "Node4":36, "Node5":15, "Node6":15, "Node7":19}
+Node 6: Sending Message: 1
+Node6 {"Node1":29, "Node2":18, "Node3":18, "Node4":55, "Node5":18, "Node6":16, "Node7":27}
+Node 6: Receiving Message: 5 From Node 7
+Node6 {"Node1":29, "Node2":18, "Node3":18, "Node4":55, "Node5":18, "Node6":17, "Node7":27}
+Node 6: Receiving Message: 1 From Node 7
+Node6 {"Node1":29, "Node2":18, "Node3":18, "Node4":55, "Node5":18, "Node6":18, "Node7":27}
+Node 6: Sending Message: 5
+Node7 {"Node7":1}
+Initialization Complete
+Node7 {"Node1":4, "Node2":4, "Node4":8, "Node5":4, "Node7":2}
+Node 7: Receiving Message: WAVE From Node 4
+Node7 {"Node1":4, "Node2":4, "Node4":8, "Node5":4, "Node7":3}
+Node 7: Sending Message: WAVE
+Node7 {"Node1":4, "Node2":4, "Node4":8, "Node5":4, "Node7":4}
+Node 7: Sending Message: WAVE
+Node7 {"Node1":4, "Node2":4, "Node4":8, "Node5":4, "Node7":5}
+Node 7: Sending Message: 1
+Node7 {"Node1":4, "Node2":4, "Node4":8, "Node5":5, "Node6":5, "Node7":6}
+Node 7: Receiving Message: 1 From Node 6
+Node7 {"Node1":4, "Node2":4, "Node4":8, "Node5":5, "Node6":5, "Node7":7}
+Node 7: Receiving Message: WAVE From Node 5
+Node7 {"Node1":12, "Node2":11, "Node3":10, "Node4":23, "Node5":10, "Node6":5, "Node7":8}
+Node 7: Receiving Message: 5 From Node 4
+Node7 {"Node1":12, "Node2":11, "Node3":10, "Node4":23, "Node5":10, "Node6":5, "Node7":9}
+Node 7: Receiving Message: 1 From Node 4
+Node7 {"Node1":12, "Node2":11, "Node3":10, "Node4":23, "Node5":10, "Node6":5, "Node7":10}
+Node 7: Sending Message: 5
+Node7 {"Node1":12, "Node2":11, "Node3":10, "Node4":23, "Node5":10, "Node6":5, "Node7":11}
+Node 7: Sending Message: 1
+Node7 {"Node1":12, "Node2":11, "Node3":10, "Node4":23, "Node5":10, "Node6":10, "Node7":12}
+Node 7: Receiving Message: 5 From Node 6
+Node7 {"Node1":12, "Node2":11, "Node3":10, "Node4":23, "Node5":10, "Node6":10, "Node7":13}
+Node 7: Sending Message: 5
+Node7 {"Node1":12, "Node2":11, "Node3":10, "Node4":23, "Node5":10, "Node6":10, "Node7":14}
+Node 7: Sending Message: 1
+Node7 {"Node1":19, "Node2":11, "Node3":10, "Node4":27, "Node5":10, "Node6":10, "Node7":15}
+Node 7: Receiving Message: 1 From Node 6
+Node7 {"Node1":19, "Node2":15, "Node3":14, "Node4":36, "Node5":15, "Node6":10, "Node7":16}
+Node 7: Receiving Message: 5 From Node 4
+Node7 {"Node1":19, "Node2":15, "Node3":14, "Node4":36, "Node5":15, "Node6":10, "Node7":17}
+Node 7: Sending Message: 5
+Node7 {"Node1":19, "Node2":15, "Node3":14, "Node4":36, "Node5":15, "Node6":10, "Node7":18}
+Node 7: Receiving Message: 1 From Node 4
+Node7 {"Node1":19, "Node2":15, "Node3":14, "Node4":36, "Node5":15, "Node6":10, "Node7":19}
+Node 7: Sending Message: 1
+Node7 {"Node1":19, "Node2":15, "Node3":14, "Node4":36, "Node5":15, "Node6":14, "Node7":20}
+Node 7: Receiving Message: 5 From Node 6
+Node7 {"Node1":19, "Node2":15, "Node3":14, "Node4":36, "Node5":15, "Node6":14, "Node7":21}
+Node 7: Sending Message: 5
+Node7 {"Node1":19, "Node2":15, "Node3":14, "Node4":36, "Node5":15, "Node6":14, "Node7":22}
+Node 7: Sending Message: 1
+Node7 {"Node1":19, "Node2":15, "Node3":14, "Node4":36, "Node5":15, "Node6":15, "Node7":23}
+Node 7: Receiving Message: 1 From Node 6
+Node7 {"Node1":29, "Node2":18, "Node3":18, "Node4":55, "Node5":18, "Node6":15, "Node7":24}
+Node 7: Receiving Message: 5 From Node 4
+Node7 {"Node1":29, "Node2":18, "Node3":18, "Node4":55, "Node5":18, "Node6":15, "Node7":25}
+Node 7: Sending Message: 5
+Node7 {"Node1":29, "Node2":18, "Node3":18, "Node4":55, "Node5":18, "Node6":15, "Node7":26}
+Node 7: Receiving Message: 1 From Node 4
+Node7 {"Node1":29, "Node2":18, "Node3":18, "Node4":55, "Node5":18, "Node6":15, "Node7":27}
+Node 7: Sending Message: 1
+Node7 {"Node1":29, "Node2":18, "Node3":18, "Node4":55, "Node5":18, "Node6":18, "Node7":28}
+Node 7: Receiving Message: 5 From Node 6
+Node7 {"Node1":29, "Node2":18, "Node3":18, "Node4":55, "Node5":18, "Node6":18, "Node7":29}
+Node 7: Sending Message: 5
+Node7 {"Node1":29, "Node2":18, "Node3":18, "Node4":55, "Node5":18, "Node6":18, "Node7":30}
+Node 7: Sending Message: 1

@@ -12,31 +12,44 @@ import unbc.ca.distributed.management.Configuration;
 import unbc.ca.distributed.management.ObjectFactory;
 import org.github.com.jvec.JVec;
 import unbc.ca.distributed.shiviz.LogMaker;
+import unbc.ca.distributed.GUI.SingleNetwork;
 
 /**
- * * @author behnish
+ * @author behnish
+ * @author michaelKowal
+ * @version 1.1
+ * @since 1.6
  */
 public class Simulation extends Thread {
 
     private Network network;
     private String algorithmName;
+    private static boolean makeLog;
+    
     
     public Simulation(String algorithm) 
     {
         super.setName("Simulation Thread");
         this.algorithmName = algorithm;
         this.network = new Network();
+        
         createNetwork();
     }   
 
     public Network getNetwork() {
         return network;
     }
-
+    
+    public static void setMakeLog(boolean checkboxVal)
+    {
+        makeLog = checkboxVal;
+    }
+    
     public Node node(Algorithm algorithm, String label) {
         Node nodeObject = new Node(label);       
         nodeObject.saveInNetwork(algorithm, network, label);
-        nodeObject.vcInfo = new JVec("Node" + nodeObject.getNodeId(), "LogFiles/Node" + nodeObject.getNodeId() + "LogFile");
+        if(makeLog)
+            nodeObject.vcInfo = new JVec("Node" + nodeObject.getNodeId(), "LogFiles/Node" + nodeObject.getNodeId() + "LogFile");
         return nodeObject;
     } 
     
@@ -52,6 +65,7 @@ public class Simulation extends Thread {
             algorithmCodeOnNode.setCsRDist(ObjectFactory.getDistributionCollection().get(integer).get("Critical Section"));
             algorithmCodeOnNode.setInterRDist(ObjectFactory.getDistributionCollection().get(integer).get("Inter Request"));
             algorithmCodeOnNode.setDelayProcess(ObjectFactory.getDistributionCollection().get(integer).get("Hop Processing"));
+            algorithmCodeOnNode.setMakeLog(makeLog);
             
             node(algorithmCodeOnNode, String.valueOf(integer));
         }
@@ -95,11 +109,13 @@ public class Simulation extends Thread {
     }
 
     @Override
-    public void run() {        
+    public void run() { 
         network.startMe();     
         Configuration.simulationLength = 100.0;
-        try{
-        LogMaker.makeShiVizLog(this);
-        }catch(IOException e){}
+        if(makeLog) {
+            try{
+                LogMaker.makeShiVizLog(this);
+            } catch(IOException e){}
+            }
     }
 }

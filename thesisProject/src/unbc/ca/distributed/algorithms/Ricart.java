@@ -71,6 +71,7 @@ public class Ricart extends Algorithm {
         } else if (getRegion() == C && !isCSFlag()) {
             freeRessource();
         }
+        currentAlg = this.getClass().getName();
     }
 
     private void handleTryMessage(int received, Msg msg) {

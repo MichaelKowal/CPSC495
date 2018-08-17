@@ -79,6 +79,7 @@ public class Raymond extends Algorithm {
                 setRegion(0);
             }
         }
+        currentAlg = this.getClass().getName();
     }
 
     private void sendPrivilege() {

@@ -20,6 +20,9 @@ import org.github.com.jvec.JVec;
 /**
  *
  * @author behnish
+ * @author michaelKowal
+ * @version 1.1
+ * @since 1.6
  */
 public abstract class Algorithm {
 
@@ -30,10 +33,17 @@ public abstract class Algorithm {
     private Generator delayProcess;
     private int lastTryClock;
     private Workload workLoadObject;
+    private boolean makeLog;
     public JVec vcInfo;
     
+    
     private static byte[] encodedMsg;
+    public static String currentAlg;
 
+    public static String getCurrentAlg()
+    {
+        return currentAlg;
+    }
     public Workload getWorkLoadObject() {
         return workLoadObject;
     }
@@ -42,6 +52,11 @@ public abstract class Algorithm {
         this.workLoadObject = workLoadObject;
     }
 
+    public void setMakeLog(boolean checkBoxVal)
+    {
+        makeLog = checkBoxVal;
+    }
+    
     protected void startMeUp() {
         init();
         checkmessage();
@@ -179,10 +194,12 @@ public abstract class Algorithm {
             message.setReceiver(nodeId);
             node.send(channel, message);
         }
-        try {
-            encodedMsg = node.getVCInfo().prepareSend("Node" + getNodeId() + ": Sending Message", 
+        if(makeLog) {
+            try {
+                encodedMsg = node.getVCInfo().prepareSend("Node " + getNodeId() + ": Sending Message: " + message.getContent(), 
                     message.getContent().getBytes());
-        } catch (IOException e) {}
+            } catch (IOException e) {}
+            }   
     }
 
     /* 
@@ -267,10 +284,14 @@ public abstract class Algorithm {
                 print("####################Node " + getNodeId() + " received message from node " + messageRecieved.getFinalSender()
                         + "###################### and MessageContent->" + messageRecieved.getContent());
                 addToTraceInternal("R," + getNodeId() + "," + messageRecieved.getFinalSender(), messageRecieved, false, true, false, false, 0);
+                if(makeLog){
                 try {
-                    node.getVCInfo().unpackReceive("Receiving Message", encodedMsg);
+                    node.getVCInfo().unpackReceive("Node " + getNodeId() + ": Receiving Message: " + 
+                            messageRecieved.getContent(), encodedMsg);
                 } catch (IOException e) {}
+                }
                 return messageRecieved;
+                
             } else {
 
                 messageRecieved.incHopCount();

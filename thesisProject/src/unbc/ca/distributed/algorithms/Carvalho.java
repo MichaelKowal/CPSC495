@@ -49,6 +49,7 @@ public class Carvalho extends Algorithm {
         } else if (getRegion() == C && !isCSFlag()) {
             releaseCS();
         }
+        currentAlg = this.getClass().getName();
     }
 
     @Override

@@ -61,6 +61,7 @@ public class Lodha extends Algorithm {
         } else if (getRegion() == C && !isCSFlag()) {
             finishCS();
         }
+        currentAlg = this.getClass().getName();
     }
 
     private void finishCS() {

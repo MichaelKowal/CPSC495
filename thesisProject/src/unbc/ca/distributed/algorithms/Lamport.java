@@ -37,7 +37,7 @@ public class Lamport extends Algorithm {
         } else if (getRegion() == C && !isCSFlag()) {
             freeRessource();
         }
-        
+        currentAlg = this.getClass().getName();
     }
 
     @Override
