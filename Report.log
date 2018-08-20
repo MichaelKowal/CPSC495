@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  17 AUG 2018 16:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  20 AUG 2018 11:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -82,6 +82,11 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen111
 \Gin@req@width=\dimen112
 )
+(/usr/local/texlive/2017/texmf-dist/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+)
 (/usr/local/texlive/2017/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count91
 \lst@gtempboxa=\box26
@@ -164,22 +169,26 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (/usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
+
+LaTeX Warning: File `References.bib' already exists on the system.
+               Not generating it from this source.
+
 (./Report.aux)
 \openout1 = `Report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 37.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 67.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -277,35 +286,35 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \c@lstlisting=\count105
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 38.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 68.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 38.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 68.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 38.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 68.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 38.
+(Font)              <14.4> on input line 68.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 38.
+(Font)              <10> on input line 68.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 38.
-LaTeX Font Info:    Try loading font information for U+msa on input line 38.
+(Font)              <7> on input line 68.
+LaTeX Font Info:    Try loading font information for U+msa on input line 68.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 38.
+LaTeX Font Info:    Try loading font information for U+msb on input line 68.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -313,7 +322,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <ShiViz_Example.png, id=1, 911.405pt x 557.08125pt>
 File: ShiViz_Example.png Graphic file (type png)
  <use ShiViz_Example.png>
-Package pdftex.def Info: ShiViz_Example.png used on input line 56.
+Package pdftex.def Info: ShiViz_Example.png used on input line 86.
 (pdftex.def)             Requested size: 364.55554pt x 222.82855pt.
 
 [1
@@ -322,15 +331,12 @@ Package pdftex.def Info: ShiViz_Example.png used on input line 56.
 <SSDA_Example.png, id=11, 1223.57124pt x 930.47626pt>
 File: SSDA_Example.png Graphic file (type png)
  <use SSDA_Example.png>
-Package pdftex.def Info: SSDA_Example.png used on input line 66.
+Package pdftex.def Info: SSDA_Example.png used on input line 95.
 (pdftex.def)             Requested size: 367.0742pt x 279.14502pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 [2 <./ShiViz_Example.png>]
-LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 77.
-
+LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 105
+.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -339,48 +345,46 @@ File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 File: SSDA_Sim_Window.png Graphic file (type png)
 
 <use SSDA_Sim_Window.png>
-Package pdftex.def Info: SSDA_Sim_Window.png used on input line 90.
+Package pdftex.def Info: SSDA_Sim_Window.png used on input line 118.
 (pdftex.def)             Requested size: 367.0742pt x 279.14502pt.
  <ShiViz_File.png, id=22, 929.4725pt x 602.25pt>
 File: ShiViz_File.png Graphic file (type png)
 
 <use ShiViz_File.png>
-Package pdftex.def Info: ShiViz_File.png used on input line 96.
+Package pdftex.def Info: ShiViz_File.png used on input line 124.
 (pdftex.def)             Requested size: 464.73512pt x 301.12425pt.
 
-Overfull \hbox (34.7305pt too wide) in paragraph at lines 96--98
+Overfull \hbox (34.7305pt too wide) in paragraph at lines 124--126
  [][] 
  []
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (2.50563pt too wide) in paragraph at lines 102--103
+Overfull \hbox (2.50563pt too wide) in paragraph at lines 130--131
  \OT1/lmr/bx/n/12 Chal-lenges Faced[] \OT1/lmr/m/n/12 There were many chal-leng
 es faced while com-plet-ing this project.
  []
 
-[4 <./SSDA_Sim_Window.png>] [5 <./ShiViz_File.png>] [6] (./Report.aux) ) 
+[4] [5 <./SSDA_Sim_Window.png>] (./Report.bbl) [6 <./ShiViz_File.png>]
+(./Report.aux) ) 
 Here is how much of TeX's memory you used:
- 3733 strings out of 492995
- 54517 string characters out of 6132704
- 144408 words of memory out of 5000000
- 7223 multiletter control sequences out of 15000+600000
- 28322 words of font info for 36 fonts, out of 8000000 for 9000
+ 3834 strings out of 492995
+ 55799 string characters out of 6132704
+ 144232 words of memory out of 5000000
+ 7315 multiletter control sequences out of 15000+600000
+ 38449 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,8n,40p,1029b,1035s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/l
-ocal/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/local/texlive
-/2017/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}</usr/local/texlive/2017/texmf-di
-st/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/t
-ype1/public/lm/lmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public
-/lm/lmr17.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtt10.
-pfb>
-Output written on Report.pdf (6 pages, 702176 bytes).
+ 39i,8n,40p,1029b,1558s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-rm.en
+c}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc}</usr/loca
+l/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/
+2017/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2017/texmf-
+dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2017/texmf-dist/fonts/
+type1/public/lm/lmri12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/publ
+ic/lm/lmtt10.pfb>
+Output written on Report.pdf (6 pages, 722259 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
- 29 compressed objects within 1 object stream
+ 54 PDF objects out of 1000 (max. 8388607)
+ 32 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

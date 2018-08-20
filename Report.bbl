@@ -1,0 +1,20 @@
+\begin{thebibliography}{1}
+
+\bibitem{VC1}
+Roberto Baldoni and Michel Raynal.
+\newblock Fundamentals of distributed computing: A practical tour of vector
+  clock systems.
+\newblock {\em IEEE Distributed Systems Online}, pages 1--25, February 2002.
+
+\bibitem{ShiViz}
+Ivan Beschastnikh, Patty Wang, Yuriy Brun, and Michael~D. Ernst.
+\newblock Debugging distributed systems: Challenges and options for validation
+  and debugging.
+\newblock {\em Communications of the ACM}, 59(8):32--37, August 2016.
+
+\bibitem{VC2}
+Balraja Subbiah.
+\newblock Lamport clocks and vector clocks.
+\newblock {\em Medium}, January 2017.
+
+\end{thebibliography}
