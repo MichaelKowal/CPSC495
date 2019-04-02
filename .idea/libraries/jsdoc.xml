@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jsdoc">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/bestchai.bitbucket.org/shiviz/jsdoc.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

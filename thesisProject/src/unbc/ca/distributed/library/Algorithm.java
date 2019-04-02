@@ -18,6 +18,7 @@ import unbc.ca.distributed.message.TimeLogical;
 import org.github.com.jvec.JVec;
 
 /**
+ * The type Algorithm.
  *
  * @author behnish
  * @author michaelKowal
