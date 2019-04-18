@@ -48,7 +48,7 @@ public class Dist_Network {
                 Dist_Node node = entry.getValue();
 
                 algorithmCodes.put(entry.getKey(), node.getAlgorithmCode());
-                simSystem.add((Dist_Sim_entityIF) node);
+                simSystem.add(node);
                 simSystem.readyToRun();
 
             } catch (RemoteException ex) {
@@ -65,7 +65,7 @@ public class Dist_Network {
                     super.setName("Clock updating Thread");
                     while (Configuration.simulationLength > simSystem.sim_clock()) {
                         int value = (int) simSystem.sim_clock();
-                        ObjectFactory.getMessagePanel().messageDisplay.setText("Global Clock :- " + String.valueOf(value));
+                        ObjectFactory.getMessagePanel().messageDisplay.setText("Global Clock :- " + value);
                     }
                 } catch (RemoteException ex) {
                     Logger.getLogger(Dist_Network.class.getName()).log(Level.SEVERE, null, ex);

@@ -28,8 +28,8 @@ public class Cube extends Thread {
     int a, b, c, d;    		// Line ends of current line
     double X0, Y0;  		// Origin
     int I, J, K;      // Iteration vars
-    int I1[];            // flags
-    int I2[];            // more flags    
+    int[] I1;            // flags
+    int[] I2;            // more flags
     MyGraph<Vertex, Edge> g;
     Set<Vertex> tempNodes = new HashSet<>();
     //int weight;
@@ -87,7 +87,7 @@ public class Cube extends Thread {
         if (unityW) {
             return 1;
         } else {
-            return (int) Math.round(distributionOfWeights.generate());
+            return Math.round(distributionOfWeights.generate());
         }
     }
 

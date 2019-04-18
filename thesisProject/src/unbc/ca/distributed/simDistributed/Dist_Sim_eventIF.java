@@ -13,25 +13,25 @@ public interface Dist_Sim_eventIF
    /**
     * Integer indicating a null event type.
     */
-   final int ENULL     = 0;
+   int ENULL     = 0;
 
    /**
     * Integer indicating a send event type.
     */
-   final int SEND      = 1;
+   int SEND      = 1;
 
    /**
     * Integer indicating a hold_done event type.
     */
-   final int HOLD_DONE = 2;
+   int HOLD_DONE = 2;
 
    /**
     * Integer indicating a create event type.
     */
-   final int CREATE    = 3;
+   int CREATE    = 3;
    
-         final int CS = 4;
-    final int IR = 5;
+         int CS = 4;
+    int IR = 5;
 
 
    /**

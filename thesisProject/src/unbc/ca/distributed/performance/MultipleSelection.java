@@ -58,7 +58,7 @@ public class MultipleSelection {
     private Map<String, Map<Integer, String>> fairness = new LinkedHashMap<>();
     private Map<String, Map<Integer, String>> requests = new LinkedHashMap<>();
 
-    public MultipleSelection(List<Object> runs) throws FileNotFoundException, IOException {
+    public MultipleSelection(List<Object> runs) throws IOException {
         this.runs = runs;
         ObjectFactory.getSidePanel().showDetails.setText("");
         intitialize();
@@ -253,7 +253,7 @@ public class MultipleSelection {
                 average.update(double2);
 
                 if (counter % windowSize == 0) {
-                    series.add(double1, (double) average.getAverage());
+                    series.add(double1, average.getAverage());
                 }
                 counter++;
             }
@@ -367,7 +367,7 @@ public class MultipleSelection {
 
                 average.update(value);
                 if (counter % windowSize == 0) {
-                    series.add(double1, (double) average.getAverage());
+                    series.add(double1, average.getAverage());
                 }
                 counter++;
             }
@@ -1065,7 +1065,7 @@ public class MultipleSelection {
         return new ChartPanel(chart);
     }
 
-    private void loadTrace(String traceFile) throws FileNotFoundException, IOException {
+    private void loadTrace(String traceFile) throws IOException {
         if (traceFile != null) {
             int i = 1;
             int j = 1;
@@ -1133,7 +1133,7 @@ public class MultipleSelection {
         }
     }
 
-    private void loadHopTrace(String traceFile) throws FileNotFoundException, IOException {
+    private void loadHopTrace(String traceFile) throws IOException {
         if (traceFile != null) {
             int k = 1;
             File file = new File(traceFile + "_hop");
@@ -1165,7 +1165,7 @@ public class MultipleSelection {
         }
     }
 
-    private void loadFinalTrace(String traceFile) throws FileNotFoundException, IOException {
+    private void loadFinalTrace(String traceFile) throws IOException {
         if (traceFile != null) {
             int k = 1;
             int j = 1;
@@ -2883,7 +2883,7 @@ public class MultipleSelection {
 
             Map<Integer, Integer> counts2 = new LinkedHashMap<>();
             for (int i = 1; i <= numberNodes.get(runName); i++) {
-                counts2.put(i, (Integer) noOfCSAcess.get(runName).get(i));
+                counts2.put(i, noOfCSAcess.get(runName).get(i));
             }
 
             coolStuff2.put(runName, counts2);

@@ -175,9 +175,7 @@ public class Lodha extends Algorithm {
             }
         }
         if (!queue.isEmpty()) {
-            if (queue.get(0).process != getNodeId()) {                
-                return false;
-            }
+            return queue.get(0).process == getNodeId();
         }        
         return true;
     }

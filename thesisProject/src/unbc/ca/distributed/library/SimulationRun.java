@@ -77,7 +77,6 @@ public class SimulationRun {
                 + " Topology Used:- " + temp.getTopology() + "\n"
                 + " Algorithm Used:- " + algorithm + "\n"
                 + " Simulation Time:- " + temp.getSimulationTime() + "\n\n";
-        ;
         return runNameForDisplay;
     }
 

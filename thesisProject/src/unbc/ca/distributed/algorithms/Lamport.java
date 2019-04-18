@@ -22,8 +22,7 @@ public class Lamport extends Algorithm {
     public ArrayList<TimeLogical> queue = new ArrayList<>();
     public int replyMessages;
     private Assertion safety;
-    private int counter = 0;
-    
+
     public Lamport() {
         setRegion(I);
         safety = new Correctness();

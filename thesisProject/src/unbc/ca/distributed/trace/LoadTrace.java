@@ -24,7 +24,7 @@ public class LoadTrace {
         this.currentTraceFile = currentTraceFile;
     }
 
-    public void loadTraceIntoDS() throws FileNotFoundException, IOException {
+    public void loadTraceIntoDS() throws IOException {
         int i = 1;
         int j = 1;
         int largeClock = 0;

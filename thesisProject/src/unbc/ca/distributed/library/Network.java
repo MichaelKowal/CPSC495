@@ -80,7 +80,7 @@ public class Network {
                 super.setName("Clock updating Thread");
                 while (Configuration.simulationLength < Core.clock()) {
                     int value = (int) Core.clock();
-                    ObjectFactory.getMessagePanel().messageDisplay.setText("Global Clock :- " + String.valueOf(value));
+                    ObjectFactory.getMessagePanel().messageDisplay.setText("Global Clock :- " + value);
                 }
             }
         }.start();

@@ -6,6 +6,7 @@
 package test;
 
 import java.io.UnsupportedEncodingException;
+import java.nio.charset.StandardCharsets;
 
 /**
  *
@@ -15,7 +16,7 @@ public class size {
 
     public static void main(String[] args) throws UnsupportedEncodingException {
         String s = "s";
-        byte[] b = s.getBytes("UTF-8");
+        byte[] b = s.getBytes(StandardCharsets.UTF_8);
         System.out.println(b);
     }
 }

@@ -440,7 +440,7 @@ public class Dist_Sim_entity
     // If they passed us a null event ref then just drop the new event
     // Otherwise copy the new event's values into the one they passed us
     try {
-      if(((Dist_Sim_eventIF)ev != null) && (evbuf != null)) 
+      if((ev != null) && (evbuf != null))
         ((Dist_Sim_eventIF)ev).copy(evbuf);
     } catch (RemoteException re) {
       System.out.println("Sim_entity.sim_wait error: " + re.getMessage());
@@ -692,7 +692,7 @@ public class Dist_Sim_entity
     // MITRE Modification:
     // Find the entity whose name = this.name and stop it.
     // Kill Thread with name "KeepAlive" so RMI "dies" also.
-    Thread[] tArray = new Thread[Thread.currentThread().activeCount()];
+    Thread[] tArray = new Thread[Thread.activeCount()];
     Thread.enumerate(tArray);
     for (int i = 0; i < tArray.length; i++) {
       if (tArray[i].getName().equals(name) || 

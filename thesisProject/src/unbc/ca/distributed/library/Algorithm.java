@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package unbc.ca.distributed.library;
 
 import java.io.IOException;
@@ -35,7 +31,7 @@ public abstract class Algorithm {
     private int lastTryClock;
     private Workload workLoadObject;
     private boolean makeLog;
-    public JVec vcInfo;
+    private JVec vcInfo;
     
     
     private static byte[] encodedMsg;

@@ -44,7 +44,7 @@ public class ConfigTableModel extends AbstractTableModel {
     @Override
     public Object getValueAt(int row, int col) {
 
-        SimulationRun entry = (SimulationRun) data.get(row);                
+        SimulationRun entry = data.get(row);
         if (col == 0) {
             return entry.getSimulationRunid();
         } else if(col==1){

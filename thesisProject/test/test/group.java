@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 class group {
 
-    public static void main(String arng[]) {
+    public static void main(String[] arng) {
         int num, i, sum = 0;
         go:
         {

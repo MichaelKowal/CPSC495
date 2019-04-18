@@ -85,8 +85,8 @@ public class Dist_Evqueue extends Vector {
     }
 
     if(i == -1)
-      addElement((Object)new_event);
+      addElement(new_event);
     else
-      insertElementAt((Object)new_event, i);
+      insertElementAt(new_event, i);
   }
 }

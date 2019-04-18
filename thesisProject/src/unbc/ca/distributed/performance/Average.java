@@ -10,7 +10,7 @@ package unbc.ca.distributed.performance;
  */
 public class Average {
     private final int window;
-    private double data[];
+    private double[] data;
     private int pos = 0;
 
     public Average(int window) {

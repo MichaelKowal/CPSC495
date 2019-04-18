@@ -106,7 +106,7 @@ public class Workload {
         if (isConstant()) {
             return 1;
         } else {
-            return (int) Math.round(weightDistribution.generate());
+            return Math.round(weightDistribution.generate());
         }
     }
 

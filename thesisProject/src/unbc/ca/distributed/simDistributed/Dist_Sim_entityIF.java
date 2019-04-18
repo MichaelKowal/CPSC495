@@ -13,22 +13,22 @@ public interface Dist_Sim_entityIF
    /**
     * Integer that indicates that this entity is in a RUNNING state.
     */
-   final int RUNNABLE = 0;
+   int RUNNABLE = 0;
 
    /**
     * Integer that indicates that this entity is in a WAITING state.
     */
-   final int WAITING  = 1;
+   int WAITING  = 1;
 
    /**
     * Integer that indicates that this entity is in a HOLDING state.
     */
-   final int HOLDING  = 2;
+   int HOLDING  = 2;
 
    /**
     * Integer that indicates that this entity is in a FINISHED state.
     */
-   final int FINISHED = 3;
+   int FINISHED = 3;
 
    /**
     * Get the name of this entity.
@@ -51,7 +51,7 @@ public interface Dist_Sim_entityIF
     *         it could not be found.
     * @exception RemoteException If a communication failure occurs.
     */
-   public Dist_Sim_portIF get_port(Dist_Sim_eventIF ev) throws RemoteException;
+   Dist_Sim_portIF get_port(Dist_Sim_eventIF ev) throws RemoteException;
 
    /**
     * Search through this entity's ports, for one called <tt>name</tt>.

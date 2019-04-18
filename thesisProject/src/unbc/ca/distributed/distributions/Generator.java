@@ -30,7 +30,7 @@ public abstract class Generator {
             Map<Double, Double> values = new LinkedHashMap<>();
             values.putAll(generatedValues);
             for (Double key : values.keySet()) {
-                Double value = (Double) values.get(key);
+                Double value = values.get(key);
                 values.put(key, Double.valueOf(value.doubleValue() / count));
                 sum += value.doubleValue();
             }

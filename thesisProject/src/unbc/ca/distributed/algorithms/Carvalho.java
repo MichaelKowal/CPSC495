@@ -28,7 +28,7 @@ public class Carvalho extends Algorithm {
     private int C = 2;
 
     private TimeLogical lastTryTime = null;
-    private boolean replyToken[];
+    private boolean[] replyToken;
     private ConcurrentHashMap<Integer, Msg> deferredMessage = new ConcurrentHashMap<>();
 
     private Assertion fairness;

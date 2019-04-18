@@ -99,7 +99,7 @@ public class MultipleSimulation extends Thread {
                     } else if (Core.clock() > tenPercentage * 9 && Core.clock() < endTime) {
                         ObjectFactory.getSimPanel().simulationProgress.setValue(90);
                     }
-                    ObjectFactory.getMessagePanel().messageDisplay.setText("Global Clock :- " + String.valueOf(value));
+                    ObjectFactory.getMessagePanel().messageDisplay.setText("Global Clock :- " + value);
                 }
                 ObjectFactory.getSimPanel().simulationProgress.setValue(100);
             }

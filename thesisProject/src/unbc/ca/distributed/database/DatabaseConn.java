@@ -36,7 +36,7 @@ public class DatabaseConn {
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            con = (Connection) DriverManager.getConnection("jdbc:mysql://" + host + port + "/" + database, username, password);
+            con = DriverManager.getConnection("jdbc:mysql://" + host + port + "/" + database, username, password);
         } catch (ClassNotFoundException | SQLException ex) {
             System.out.println("Error: I got it"+ ex);
             //Logger.getLogger(DatabaseConn.class.getName()).log(Level.SEVERE, null, ex);

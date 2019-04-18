@@ -21,8 +21,9 @@ public class Dist_Sim_any_p
   /** Constructor.
    * @return A new instance of the class.
    */
-  public Dist_Sim_any_p()  {};
-  /** The match function called by Sim_system.sim_select(),
+  public Dist_Sim_any_p()  {}
+
+    /** The match function called by Sim_system.sim_select(),
    * not used directly by the user
    */
   public boolean match(Dist_Sim_event ev) { return true; }

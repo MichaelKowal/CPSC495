@@ -25,7 +25,7 @@ public class StringMessage extends Message
     
     @Override
     public String toString() {
-        return message.toString();
+        return message;
     }    
 
     @Override

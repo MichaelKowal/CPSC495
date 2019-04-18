@@ -225,10 +225,8 @@ public class SizeOf
 		if (clazz == java.lang.Double.TYPE)
 			return true;
 
-		if (clazz == java.lang.Void.TYPE)
-			return true;
+		return clazz == Void.TYPE;
 
-		return false;
 	}
 
 	/**
@@ -244,10 +242,7 @@ public class SizeOf
 			return false;
 		else if (SKIP_STATIC_FIELD && Modifier.isStatic(modificatori))
 			return false;
-		else if (SKIP_FINAL_FIELD && Modifier.isFinal(modificatori))
-			return false;
-		else
-			return true;
+		else return !SKIP_FINAL_FIELD || !Modifier.isFinal(modificatori);
 	}
 
 	/**

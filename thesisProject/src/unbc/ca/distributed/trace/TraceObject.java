@@ -174,7 +174,7 @@ public class TraceObject extends Event {
 
     @Override
     public String toString() {
-        return "(Type = " + type + ", Sender = " + sender + ", localClock = " + localClock + ", Simulation Clock = " + simulationClock + ", lateEvent = " + String.valueOf(lateEvent) + ")";
+        return "(Type = " + type + ", Sender = " + sender + ", localClock = " + localClock + ", Simulation Clock = " + simulationClock + ", lateEvent = " + lateEvent + ")";
     }
 
     public String shortDes() {

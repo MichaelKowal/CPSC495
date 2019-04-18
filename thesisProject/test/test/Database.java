@@ -21,7 +21,7 @@ public class Database {
 //main class
         Class.forName("com.mysql.jdbc.Driver");
 //load the jdbc driver class
-        Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost/simulation", "root", "");/* red colored part has to be as per your database*/
+        Connection con = DriverManager.getConnection("jdbc:mysql://localhost/simulation", "root", "");/* red colored part has to be as per your database*/
         /*make connection with the database(db name ecommerce, user is root and password is not set in my case put yours in those places with password if you have set password for the database*/
         PreparedStatement statement = con.prepareStatement("select * from event");
         /*sql structure to select instances from the table*/

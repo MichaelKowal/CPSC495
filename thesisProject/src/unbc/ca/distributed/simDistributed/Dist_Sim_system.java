@@ -419,8 +419,8 @@ public class Dist_Sim_system
         Dist_Sim_portIF p1, p2;
         Dist_Sim_entityIF e1, e2;
         try {
-            e1 = (Dist_Sim_entityIF) get_entity(ent1);
-            e2 = (Dist_Sim_entityIF) get_entity(ent2);
+            e1 = get_entity(ent1);
+            e2 = get_entity(ent2);
             p1 = e1.get_port(port1);
             p2 = e2.get_port(port2);
             p1.connect(e2);
@@ -499,7 +499,7 @@ public class Dist_Sim_system
             // Give everything else a chance
             if (simThread != null) {
                 try {
-                    simThread.sleep(5);
+                    Thread.sleep(5);
                 } catch (InterruptedException except) {
                 }
             }
@@ -852,7 +852,7 @@ public class Dist_Sim_system
                 run();
                 d = new java.util.Date();
                 System.out.println("End:   " + d.toString());
-                Thread[] tArray = new Thread[Thread.currentThread().activeCount()];
+                Thread[] tArray = new Thread[Thread.activeCount()];
                 Thread.enumerate(tArray);
                 for (int i = 0; i < tArray.length; i++) {
                     if (tArray[i].getName().equals("KeepAlive")) {

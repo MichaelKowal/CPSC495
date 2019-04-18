@@ -79,7 +79,7 @@ public class Edge implements Comparable {
 
     @Override
     public String toString() {
-        return "Edge: " + String.valueOf(id) + " - W: " + weight;
+        return "Edge: " + id + " - W: " + weight;
     }
 
     @Override

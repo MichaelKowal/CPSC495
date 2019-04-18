@@ -34,8 +34,8 @@ public class MyGraph<Vertex, Edge> extends UndirectedOrderedSparseMultigraph<Ver
         {
             // Removing the Object we created in the edge factory. Otherwise it will lead to 
             // having a empty outchannel.
-            String edgeName[] = edge.toString().split("-");
-            String temp[] = edgeName[0].split(":");            
+            String[] edgeName = edge.toString().split("-");
+            String[] temp = edgeName[0].split(":");
             ObjectFactory.getEdges().remove(Integer.parseInt(temp[1].trim()));            
             
             return false;

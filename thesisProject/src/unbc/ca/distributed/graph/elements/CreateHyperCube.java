@@ -89,8 +89,8 @@ public class CreateHyperCube {
 
 class TrigTable {
 
-    public double X1[];
-    public double Y1[];
+    public double[] X1;
+    public double[] Y1;
 
     TrigTable(int N) {
         int I = -1;

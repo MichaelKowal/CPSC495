@@ -43,7 +43,7 @@ public class ChartProducer {
     private Map<Integer, String> fairness = new LinkedHashMap<>();
     private Map<Integer, String> requests = new LinkedHashMap<>();
 
-    public ChartProducer(String traceFile) throws FileNotFoundException, IOException, Exception {
+    public ChartProducer(String traceFile) throws Exception {
         this.traceFile = traceFile;
         loadTrace();
         loadHopTrace();
@@ -539,7 +539,7 @@ public class ChartProducer {
      * Function which loads the data structures from the trace file
      * 
      */
-    private void loadTrace() throws FileNotFoundException, IOException, Exception {
+    private void loadTrace() throws Exception {
         if (traceFile != null) {
             int i = 1;
             int j = 1;
@@ -603,7 +603,7 @@ public class ChartProducer {
         }
     }
 
-    private void loadHopTrace() throws FileNotFoundException, IOException, Exception {
+    private void loadHopTrace() throws Exception {
         if (traceFile != null) {
             int k = 1;
             ReadFile file = new ReadFile(traceFile + "_hop");
@@ -632,7 +632,7 @@ public class ChartProducer {
         }
     }
 
-    private void loadFinalTrace() throws FileNotFoundException, IOException, Exception {
+    private void loadFinalTrace() throws Exception {
         if (traceFile != null) {
             int k = 1;
             int j = 1;
@@ -904,7 +904,7 @@ public class ChartProducer {
             average.update(value);
 
             if (counter % windowSize == 0) {
-                series.add(double1, (double) average.getAverage());
+                series.add(double1, average.getAverage());
             }
             counter++;
         }
@@ -1209,7 +1209,7 @@ public class ChartProducer {
         for (Map.Entry<Integer, Integer> entry : counts.entrySet()) {
             Integer nodeIDD = entry.getKey();
             Integer count = entry.getValue();
-            series.add((Integer) nodeIDD, (Integer) count);
+            series.add(nodeIDD, count);
 
             System.out.println("Node " + nodeIDD + " has violations " + count);
         }
@@ -1220,7 +1220,7 @@ public class ChartProducer {
             if (numberOfCSAccess(nodeIDD) != count) {
                 count = numberOfCSAccess(nodeIDD);
             }
-            series2.add((Integer) nodeIDD, (Integer) count);
+            series2.add(nodeIDD, count);
 
             System.out.println("Node " + nodeIDD + " has request " + count);
         }

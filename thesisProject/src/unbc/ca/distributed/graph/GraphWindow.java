@@ -77,9 +77,9 @@ public class GraphWindow extends VisualizationViewer<Vertex, Edge> implements Pr
     /* Edges  */
     protected DirectionDisplayPredicate<Vertex, Edge> show_arrow;   
 
-    public Graph<Vertex, Edge> getGraphObject() {
-        return graphObject;
-    }
+//    public Graph<Vertex, Edge> getGraphObject() {
+//        return graphObject;
+//    }
 
     public void setGraphObject(Graph<Vertex, Edge> graphObject) {
         this.graphObject = graphObject;
@@ -408,10 +408,7 @@ public class GraphWindow extends VisualizationViewer<Vertex, Edge> implements Pr
             if (graph.getEdgeType(e) == EdgeType.DIRECTED && show_d) {
                 return true;
             }
-            if (graph.getEdgeType(e) == EdgeType.UNDIRECTED && show_u) {
-                return true;
-            }
-            return false;
+            return graph.getEdgeType(e) == EdgeType.UNDIRECTED && show_u;
         }
     }
 

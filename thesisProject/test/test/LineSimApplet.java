@@ -142,9 +142,9 @@ public class LineSimApplet extends JApplet  {
   //my choice
   class MyChoice extends Choice
   {
-    private double vals[];
+    private double[] vals;
 
-    public MyChoice(String items[], double values[],int defaultValue)
+    public MyChoice(String[] items, double[] values, int defaultValue)
     {
       for (int i=0; i<items.length;i++) {super.addItem(items[i]);}
       vals=values;
@@ -179,7 +179,8 @@ public class LineSimApplet extends JApplet  {
           LineSimApplet.this.myLine.clearPackets();
           LineSimApplet.this.timerThread.suspend();
         }
-        try  {LineSimApplet.this.timerThread.sleep(50);} catch (Exception e) { }
+        try  {
+          Thread.sleep(50);} catch (Exception e) { }
       }
     }
 

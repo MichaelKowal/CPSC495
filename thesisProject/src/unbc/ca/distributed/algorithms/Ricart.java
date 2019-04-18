@@ -55,7 +55,7 @@ public class Ricart extends Algorithm {
         setRegion(I);
         for (Map.Entry<Integer, Msg> entry : defer.entrySet()) {
             Integer receiver = entry.getKey();
-            Msg mutual = (Msg) entry.getValue();
+            Msg mutual = entry.getValue();
 
             send(receiver, mutual);
             defer.remove(receiver);

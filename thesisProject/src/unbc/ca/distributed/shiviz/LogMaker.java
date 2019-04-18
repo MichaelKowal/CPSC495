@@ -18,7 +18,7 @@ public class LogMaker {
     /**
      * Called when a simulation is finished. Consolidates all node log files
      * @param currentSim The simulation that the log file is for. 
-     * @throws IOException 
+     * @throws IOException File IO
      */
     public static void makeShiVizLog(Simulation currentSim) throws IOException {
         int numOfFiles = currentSim.getNetwork().getNodes().size();

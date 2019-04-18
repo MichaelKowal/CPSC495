@@ -32,7 +32,7 @@ public class Dist_Server extends Thread implements Dist_Linker {
         this.port = port;
         this.numEntities = numEntities;    
         try {
-            simSystem = new Dist_Sim_system(ObjectFactory.getNodeCount(), (Dist_Linker) this);
+            simSystem = new Dist_Sim_system(ObjectFactory.getNodeCount(), this);
             simSystem.initialise();
 
             Naming.rebind("//" + Configuration.host + ":" + Configuration.port + "/DistributedSimulation", simSystem);

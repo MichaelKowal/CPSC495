@@ -119,7 +119,7 @@ public final class MainFrame extends JFrame {
         if (isUnitWeight()) {
             return 1;
         } else {
-            return (int) Math.round(weightDist.generate());
+            return Math.round(weightDist.generate());
         }
     }
 
@@ -769,7 +769,7 @@ public final class MainFrame extends JFrame {
                     }
 
                     if (check && !"@@@@@@".equals(strLine)) {
-                        String temp[] = null;
+                        String[] temp = null;
                         temp = strLine.split("#");
 
                         Vertex node = new Vertex();
@@ -781,7 +781,7 @@ public final class MainFrame extends JFrame {
 
                     } else {
                         if (!"@@@@@@".equals(strLine)) {
-                            String temp[] = null;
+                            String[] temp = null;
                             temp = strLine.split("#");
                             Edge edge = new Edge(Integer.parseInt(temp[3]));
                             edge.setId(Integer.parseInt(temp[2]));
@@ -821,7 +821,7 @@ public final class MainFrame extends JFrame {
                 }
 
                 if (check && !"@@@@@@".equals(strLine)) {
-                    String temp[] = null;
+                    String[] temp = null;
                     temp = strLine.split("#");
 
                     Vertex node = new Vertex();
@@ -833,7 +833,7 @@ public final class MainFrame extends JFrame {
 
                 } else {
                     if (!"@@@@@@".equals(strLine)) {
-                        String temp[] = null;
+                        String[] temp = null;
                         temp = strLine.split("#");
                         Edge edge = new Edge(Integer.parseInt(temp[3]));
                         edge.setId(Integer.parseInt(temp[2]));
@@ -1564,10 +1564,7 @@ public final class MainFrame extends JFrame {
     }
 
     private boolean checkEdge(Vertex v1, Vertex v2, MyGraph g) {
-        if (g.findEdge(v1, v2) == null) {
-            return false;
-        }
-        return true;
+        return g.findEdge(v1, v2) != null;
     }
 
     private MyGraph<Vertex, Edge> fullGraph() {
@@ -1614,8 +1611,8 @@ public final class MainFrame extends JFrame {
 
     public void updateEdges() {
         for (Edge e : graphObject.getEdges()) {
-            Vertex source = (Vertex) graphObject.getEndpoints(e).getFirst();
-            Vertex destination = (Vertex) graphObject.getEndpoints(e).getSecond();
+            Vertex source = graphObject.getEndpoints(e).getFirst();
+            Vertex destination = graphObject.getEndpoints(e).getSecond();
 
             e.setSource(source);
             e.setDestination(destination);

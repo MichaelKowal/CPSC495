@@ -123,13 +123,13 @@ public class SimpleAnimationEngine {
 
     }
 
-    public static interface Animatable {
+    public interface Animatable {
 
-        public void copy();
+        void copy();
 
-        public void update(AnimationCanvas canvas, float progress);
+        void update(AnimationCanvas canvas, float progress);
 
-        public void paint(Graphics2D g2d);
+        void paint(Graphics2D g2d);
 
     }
 
@@ -189,21 +189,21 @@ public class SimpleAnimationEngine {
 
     public interface AnimationCanvas {
 
-        public void updateState();
+        void updateState();
 
-        public Rectangle getBounds();
+        Rectangle getBounds();
 
     }
 
-    public static interface AnimationModel {
+    public interface AnimationModel {
 
-        public void update(AnimationCanvas canvas, float progress);
+        void update(AnimationCanvas canvas, float progress);
 
-        public void add(Animatable animatable);
+        void add(Animatable animatable);
 
-        public void remove(Animatable animatable);
+        void remove(Animatable animatable);
 
-        public Animatable[] getAnimatables();
+        Animatable[] getAnimatables();
 
     }
 
@@ -233,7 +233,7 @@ public class SimpleAnimationEngine {
         }
 
         protected int getRandomNumber(int range) {
-            return (int) new Random().nextInt();
+            return new Random().nextInt();
         }
 
         protected Color getRandomColor() {
